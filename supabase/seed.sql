@@ -71,14 +71,47 @@ INSERT INTO auth.users (
   created_at,
   updated_at,
   confirmation_token,
-  recovery_token
+  recovery_token,
+  email_change_token_new,
+  email_change,
+  email_change_token_current,
+  phone_change,
+  phone_change_token,
+  reauthentication_token
 ) VALUES
-  ('e0000000-0000-0000-0000-000000000001', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'admin@kinnipaw.local', crypt('password123', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"display_name":"Platform Operations Admin"}', NOW(), NOW(), '', ''),
-  ('e0000000-0000-0000-0000-000000000002', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'moderator@kinnipaw.local', crypt('password123', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"display_name":"Shuvo Moderator"}', NOW(), NOW(), '', ''),
-  ('e0000000-0000-0000-0000-000000000003', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'rescuer.rahat@kinnipaw.local', crypt('password123', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"display_name":"Rahat Chowdhury"}', NOW(), NOW(), '', ''),
-  ('e0000000-0000-0000-0000-000000000004', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'adopter.nusrat@kinnipaw.local', crypt('password123', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"display_name":"Nusrat Jahan"}', NOW(), NOW(), '', ''),
-  ('e0000000-0000-0000-0000-000000000005', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'vet.arif@kinnipaw.local', crypt('password123', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"display_name":"Dr. Arifur Rahman, DVM"}', NOW(), NOW(), '', '')
+  ('e0000000-0000-0000-0000-000000000001', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'admin@kinnipaw.local', crypt('password123', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"display_name":"Platform Operations Admin"}', NOW(), NOW(), '', '', '', '', '', '', '', ''),
+  ('e0000000-0000-0000-0000-000000000002', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'moderator@kinnipaw.local', crypt('password123', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"display_name":"Shuvo Moderator"}', NOW(), NOW(), '', '', '', '', '', '', '', ''),
+  ('e0000000-0000-0000-0000-000000000003', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'rescuer.rahat@kinnipaw.local', crypt('password123', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"display_name":"Rahat Chowdhury"}', NOW(), NOW(), '', '', '', '', '', '', '', ''),
+  ('e0000000-0000-0000-0000-000000000004', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'adopter.nusrat@kinnipaw.local', crypt('password123', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"display_name":"Nusrat Jahan"}', NOW(), NOW(), '', '', '', '', '', '', '', ''),
+  ('e0000000-0000-0000-0000-000000000005', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'vet.arif@kinnipaw.local', crypt('password123', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"display_name":"Dr. Arifur Rahman, DVM"}', NOW(), NOW(), '', '', '', '', '', '', '', '')
 ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO auth.identities (
+  provider_id,
+  user_id,
+  identity_data,
+  provider,
+  last_sign_in_at,
+  created_at,
+  updated_at
+)
+SELECT
+  id::text,
+  id,
+  json_build_object('sub', id, 'email', email),
+  'email',
+  NOW(),
+  NOW(),
+  NOW()
+FROM auth.users
+WHERE id IN (
+  'e0000000-0000-0000-0000-000000000001',
+  'e0000000-0000-0000-0000-000000000002',
+  'e0000000-0000-0000-0000-000000000003',
+  'e0000000-0000-0000-0000-000000000004',
+  'e0000000-0000-0000-0000-000000000005'
+)
+ON CONFLICT (provider, provider_id) DO NOTHING;
 
 INSERT INTO public.profiles (id, username, display_name, bio, city, area_label, preferred_locale, account_status) VALUES
   ('e0000000-0000-0000-0000-000000000001', 'admin_kinnipaw', 'Platform Operations Admin', 'Administrator managing governance, animal welfare oversight, and audit logs.', 'Dhaka', 'Dhanmondi, Dhaka', 'en', 'active'),
