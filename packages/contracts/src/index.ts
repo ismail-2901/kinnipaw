@@ -5,3 +5,4 @@ export * from './lost-found.js';
 export * from './rescue.js';
 export * from './messaging.js';
 export * from './providers.js';
+export * from './admin.js';

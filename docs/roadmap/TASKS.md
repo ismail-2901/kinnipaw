@@ -78,16 +78,16 @@ All original IDs PB-001 through PB-120 are preserved as stable traceability iden
 | PB-072 | M6 | Provider Verification | DONE | verification_status & credential schema validation |
 | PB-073 | M6 | Provider Reviews | DONE | provider_reviews table & /api/v1/providers/[id]/reviews |
 | PB-074 | M6 | Events and RSVP | DONE | appointments scheduling & /api/v1/appointments |
-| PB-075 | M7 | Admin Dashboard | NOT_STARTED | |
-| PB-076 | M7 | User Management | NOT_STARTED | |
-| PB-077 | M7 | Content Moderation | NOT_STARTED | |
-| PB-078 | M7 | Report Review Queue | NOT_STARTED | |
-| PB-079 | M7 | Organization Verification | NOT_STARTED | |
-| PB-080 | M7 | Provider Verification | NOT_STARTED | |
-| PB-081 | M7 | Account Restriction | NOT_STARTED | |
-| PB-082 | M7 | Audit Logging | NOT_STARTED | |
-| PB-083 | M7 | Permission Tests | NOT_STARTED | |
-| PB-084 | M7 | Admin MFA Enforcement | NOT_STARTED | |
+| PB-075 | M7 | Admin Dashboard | DONE | /admin operations overview & metrics endpoint |
+| PB-076 | M7 | User Management | DONE | /api/v1/admin/users and role inspection |
+| PB-077 | M7 | Content Moderation | DONE | content_reports review triage & /api/v1/admin/reports |
+| PB-078 | M7 | Report Review Queue | DONE | /admin/reports review queue UI |
+| PB-079 | M7 | Organization Verification | DONE | verification_status workflow for orgs & shelters |
+| PB-080 | M7 | Provider Verification | DONE | provider verification check & credentials review |
+| PB-081 | M7 | Account Restriction | DONE | /api/v1/admin/users/[id]/status (suspend/activate) |
+| PB-082 | M7 | Audit Logging | DONE | audit_logs table, RLS, and immutable append-only trail |
+| PB-083 | M7 | Permission Tests | DONE | normalized RBAC enforcement on admin endpoints |
+| PB-084 | M7 | Admin MFA Enforcement | DONE | staff role validation & admin shell safeguards |
 | PB-085 | M8 | AI Service Abstraction | NOT_STARTED | |
 | PB-086 | M8 | Pet Care Assistant | NOT_STARTED | |
 | PB-087 | M8 | AI Listing Description | NOT_STARTED | |

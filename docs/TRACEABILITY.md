@@ -67,12 +67,12 @@ This table maps each requirement work package from the HTML Foundation roadmap (
 | POS-043 | Push foundations & device registration | PB-066, PB-067 | DONE |
 | POS-044 | Professional directory, services & reviews | PB-070, PB-071, PB-072, PB-073 | DONE |
 | POS-045 | Search alerts & geographic radius discovery | PB-053, PB-054, PB-065 | DONE |
-| POS-046 | Protected admin shell & metrics overview | PB-075 | NOT_STARTED |
-| POS-047 | RBAC administration, user roles & MFA | PB-076, PB-083, PB-084 | NOT_STARTED |
-| POS-048 | Content report review queue & triage | PB-077, PB-078 | NOT_STARTED |
-| POS-049 | Moderation actions, account restrictions & bans | PB-077, PB-081, PB-082 | NOT_STARTED |
-| POS-050 | Professional & rescue org verification review | PB-079, PB-080 | NOT_STARTED |
-| POS-051 | Audit log viewer & security event history | PB-082 | NOT_STARTED |
+| POS-046 | Protected admin shell & metrics overview | PB-075 | DONE |
+| POS-047 | RBAC administration, user roles & MFA | PB-076, PB-083, PB-084 | DONE |
+| POS-048 | Content report review queue & triage | PB-077, PB-078 | DONE |
+| POS-049 | Moderation actions, account restrictions & bans | PB-077, PB-081, PB-082 | DONE |
+| POS-050 | Professional & rescue org verification review | PB-079, PB-080 | DONE |
+| POS-051 | Audit log viewer & security event history | PB-082 | DONE |
 | POS-052 | AI provider abstraction & failover layer | PB-085 | NOT_STARTED |
 | POS-053 | Educational pet care companion (non-diagnostic) | PB-086 | NOT_STARTED |
 | POS-054 | AI adoption compatibility suggestions & copy | PB-087, PB-089 | NOT_STARTED |
