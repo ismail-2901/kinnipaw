@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
+import { ReportActionButtons } from './ReportActionButtons';
 
 interface AdminReportsPageProps {
   searchParams: Promise<{ status?: string }>;
@@ -144,20 +145,7 @@ export default async function AdminReportsQueuePage({ searchParams }: AdminRepor
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-2">
-                    <button
-                      type="button"
-                      className="rounded-lg bg-emerald-700 px-3.5 py-1.5 text-xs font-bold text-white hover:bg-emerald-800 transition"
-                    >
-                      Resolve
-                    </button>
-                    <button
-                      type="button"
-                      className="rounded-lg border border-gray-300 px-3.5 py-1.5 text-xs font-bold text-gray-700 hover:bg-gray-50 transition"
-                    >
-                      Dismiss
-                    </button>
-                  </div>
+                  <ReportActionButtons reportId={r.id} />
                 </div>
               );
             })}
