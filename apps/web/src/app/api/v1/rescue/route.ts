@@ -19,9 +19,9 @@ export async function GET(request: NextRequest) {
       .from('rescue_cases')
       .select(`
         *,
-        reporter:profiles(id, username, display_name, avatar_path),
+        reporter:profiles!rescue_cases_reported_by_fkey(id, username, display_name, avatar_path),
         species:species(id, common_name, is_domestic),
-        assignments:rescue_assignments(id, assigned_to, assignment_status, assigned_to_profile:profiles!assigned_to(display_name))
+        assignments:rescue_assignments(id, assigned_to, assignment_status, assigned_to_profile:profiles!rescue_assignments_assigned_to_fkey(display_name))
       `)
       .order('created_at', { ascending: false })
       .limit(limit + 1);

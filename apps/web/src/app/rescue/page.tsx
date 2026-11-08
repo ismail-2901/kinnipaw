@@ -21,9 +21,9 @@ export default async function RescueCoordinationPage({ searchParams }: RescuePag
       urgency,
       is_wildlife,
       created_at,
-      reporter:profiles(display_name, city, area_label),
+      reporter:profiles!rescue_cases_reported_by_fkey(display_name, city, area_label),
       species:species(common_name, is_domestic),
-      assignments:rescue_assignments(id, assigned_to_profile:profiles!assigned_to(display_name))
+      assignments:rescue_assignments(id, assigned_to_profile:profiles!rescue_assignments_assigned_to_fkey(display_name))
     `)
     .order('created_at', { ascending: false });
 
