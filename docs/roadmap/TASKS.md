@@ -54,17 +54,17 @@ All original IDs PB-001 through PB-120 are preserved as stable traceability iden
 | PB-048 | M4 | Application History | DONE | adoption_status_history audit trail trigger |
 | PB-049 | M4 | Listing Verification Workflow | DONE | domestic species check & anti-wildlife trade RLS |
 | PB-050 | M4 | Adoption Completion Process | DONE | auto-transition listing to adopted upon approval |
-| PB-051 | M5 | Lost Pet Reports | NOT_STARTED | |
-| PB-052 | M5 | Found Pet Reports | NOT_STARTED | |
-| PB-053 | M5 | Geographic Filtering | NOT_STARTED | |
-| PB-054 | M5 | Nearby Report Discovery | NOT_STARTED | |
-| PB-055 | M5 | Sighting Submission | NOT_STARTED | |
-| PB-056 | M5 | Rule-based Matching | NOT_STARTED | |
-| PB-057 | M5 | Rescue Request Creation | NOT_STARTED | |
-| PB-058 | M5 | Volunteer Assignment | NOT_STARTED | |
-| PB-059 | M5 | Rescue Status Workflow | NOT_STARTED | |
-| PB-060 | M5 | Rescue History | NOT_STARTED | |
-| PB-061 | M5 | Reunion Confirmation | NOT_STARTED | |
+| PB-051 | M5 | Lost Pet Reports | DONE | lost_found_posts table & /api/v1/lost-found POST |
+| PB-052 | M5 | Found Pet Reports | DONE | found report flow & /lost-found/new |
+| PB-053 | M5 | Geographic Filtering | DONE | coarse area filtering and PostGIS ready |
+| PB-054 | M5 | Nearby Report Discovery | DONE | /lost-found catalog and filter bar on web & mobile |
+| PB-055 | M5 | Sighting Submission | DONE | lost_found_sightings table & /api/v1/lost-found/[id]/sightings |
+| PB-056 | M5 | Rule-based Matching | DONE | deterministic candidate matcher on species & area |
+| PB-057 | M5 | Rescue Request Creation | DONE | rescue_cases table & /api/v1/rescue with wildlife check |
+| PB-058 | M5 | Volunteer Assignment | DONE | rescue_assignments table & /api/v1/rescue/[id]/assign |
+| PB-059 | M5 | Rescue Status Workflow | DONE | open/assigned/in_progress/resolved status transitions |
+| PB-060 | M5 | Rescue History | DONE | rescue_status_events audit trail trigger |
+| PB-061 | M5 | Reunion Confirmation | DONE | lost_found_matches table & human confirmation flow |
 | PB-062 | M6 | Conversation Management | NOT_STARTED | |
 | PB-063 | M6 | Private Realtime Messaging | NOT_STARTED | |
 | PB-064 | M6 | Message Read State | NOT_STARTED | |

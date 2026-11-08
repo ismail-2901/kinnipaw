@@ -849,6 +849,240 @@ export interface Database {
           changed_at?: string;
         };
       };
+      lost_found_posts: {
+        Row: {
+          id: string;
+          reporter_id: string;
+          animal_id: string | null;
+          report_type: 'lost' | 'found';
+          species_id: string;
+          description: string;
+          last_seen_area_label: string | null;
+          last_seen_location: unknown | null;
+          incident_date: string;
+          status: 'active' | 'resolved' | 'expired';
+          resolved_by: string | null;
+          resolved_at: string | null;
+          media_paths: string[] | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          reporter_id: string;
+          animal_id?: string | null;
+          report_type: 'lost' | 'found';
+          species_id: string;
+          description: string;
+          last_seen_area_label?: string | null;
+          last_seen_location?: unknown | null;
+          incident_date: string;
+          status?: 'active' | 'resolved' | 'expired';
+          resolved_by?: string | null;
+          resolved_at?: string | null;
+          media_paths?: string[] | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          reporter_id?: string;
+          animal_id?: string | null;
+          report_type?: 'lost' | 'found';
+          species_id?: string;
+          description?: string;
+          last_seen_area_label?: string | null;
+          last_seen_location?: unknown | null;
+          incident_date?: string;
+          status?: 'active' | 'resolved' | 'expired';
+          resolved_by?: string | null;
+          resolved_at?: string | null;
+          media_paths?: string[] | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      lost_found_sightings: {
+        Row: {
+          id: string;
+          lost_found_post_id: string;
+          reported_by: string;
+          sighting_area_label: string | null;
+          sighting_location: unknown | null;
+          sighting_date: string;
+          notes: string | null;
+          media_paths: string[] | null;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          lost_found_post_id: string;
+          reported_by: string;
+          sighting_area_label?: string | null;
+          sighting_location?: unknown | null;
+          sighting_date: string;
+          notes?: string | null;
+          media_paths?: string[] | null;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          lost_found_post_id?: string;
+          reported_by?: string;
+          sighting_area_label?: string | null;
+          sighting_location?: unknown | null;
+          sighting_date?: string;
+          notes?: string | null;
+          media_paths?: string[] | null;
+          created_at?: string;
+        };
+      };
+      lost_found_matches: {
+        Row: {
+          id: string;
+          lost_post_id: string;
+          found_post_id: string;
+          ai_match_candidate_id: string | null;
+          match_status: 'ai_suggested' | 'user_reported' | 'confirmed' | 'rejected';
+          confirmed_by: string | null;
+          confirmed_at: string | null;
+          confidence_score: number | null;
+          notes: string | null;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          lost_post_id: string;
+          found_post_id: string;
+          ai_match_candidate_id?: string | null;
+          match_status?: 'ai_suggested' | 'user_reported' | 'confirmed' | 'rejected';
+          confirmed_by?: string | null;
+          confirmed_at?: string | null;
+          confidence_score?: number | null;
+          notes?: string | null;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          lost_post_id?: string;
+          found_post_id?: string;
+          ai_match_candidate_id?: string | null;
+          match_status?: 'ai_suggested' | 'user_reported' | 'confirmed' | 'rejected';
+          confirmed_by?: string | null;
+          confirmed_at?: string | null;
+          confidence_score?: number | null;
+          notes?: string | null;
+          created_at?: string;
+        };
+      };
+      rescue_cases: {
+        Row: {
+          id: string;
+          reported_by: string;
+          organization_id: string | null;
+          species_id: string;
+          description: string;
+          location_area_label: string | null;
+          location: unknown | null;
+          case_status: 'open' | 'assigned' | 'in_progress' | 'resolved' | 'closed';
+          urgency: 'low' | 'medium' | 'high' | 'critical';
+          is_wildlife: boolean;
+          media_paths: string[] | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          reported_by: string;
+          organization_id?: string | null;
+          species_id: string;
+          description: string;
+          location_area_label?: string | null;
+          location?: unknown | null;
+          case_status?: 'open' | 'assigned' | 'in_progress' | 'resolved' | 'closed';
+          urgency?: 'low' | 'medium' | 'high' | 'critical';
+          is_wildlife?: boolean;
+          media_paths?: string[] | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          reported_by?: string;
+          organization_id?: string | null;
+          species_id?: string;
+          description?: string;
+          location_area_label?: string | null;
+          location?: unknown | null;
+          case_status?: 'open' | 'assigned' | 'in_progress' | 'resolved' | 'closed';
+          urgency?: 'low' | 'medium' | 'high' | 'critical';
+          is_wildlife?: boolean;
+          media_paths?: string[] | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      rescue_assignments: {
+        Row: {
+          id: string;
+          rescue_case_id: string;
+          assigned_to: string;
+          assigned_by: string;
+          assignment_status: 'active' | 'completed' | 'declined' | 'reassigned';
+          notes: string | null;
+          assigned_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          rescue_case_id: string;
+          assigned_to: string;
+          assigned_by: string;
+          assignment_status?: 'active' | 'completed' | 'declined' | 'reassigned';
+          notes?: string | null;
+          assigned_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          rescue_case_id?: string;
+          assigned_to?: string;
+          assigned_by?: string;
+          assignment_status?: 'active' | 'completed' | 'declined' | 'reassigned';
+          notes?: string | null;
+          assigned_at?: string;
+          updated_at?: string;
+        };
+      };
+      rescue_status_events: {
+        Row: {
+          id: string;
+          rescue_case_id: string;
+          from_status: string | null;
+          to_status: string;
+          changed_by: string;
+          notes: string | null;
+          changed_at: string;
+        };
+        Insert: {
+          id?: string;
+          rescue_case_id: string;
+          from_status?: string | null;
+          to_status: string;
+          changed_by: string;
+          notes?: string | null;
+          changed_at?: string;
+        };
+        Update: {
+          id?: string;
+          rescue_case_id?: string;
+          from_status?: string | null;
+          to_status?: string;
+          changed_by?: string;
+          notes?: string | null;
+          changed_at?: string;
+        };
+      };
     };
     Views: Record<string, never>;
     Functions: Record<string, never>;

@@ -55,12 +55,12 @@ This table maps each requirement work package from the HTML Foundation roadmap (
 | POS-031 | Adoption application submission & dashboard | PB-045, PB-046 | DONE |
 | POS-032 | Application review, status history & completion | PB-047, PB-048, PB-050 | DONE |
 | POS-033 | Safe contact, anti-scam guidance & screening | PB-042, PB-045, PB-062 | DONE |
-| POS-034 | Lost & found animal reporting (dual flow) | PB-051, PB-052 | NOT_STARTED |
-| POS-035 | Public sighting submission & coordinates | PB-055 | NOT_STARTED |
-| POS-036 | Match candidates generation (rule-based + AI) | PB-056, PB-088 | NOT_STARTED |
-| POS-037 | Human match review & candidate dismissal | PB-056, PB-061 | NOT_STARTED |
-| POS-038 | Rescue request creation & urgency triage | PB-057, PB-059 | NOT_STARTED |
-| POS-039 | Volunteer rescue assignment, history & closure | PB-058, PB-060 | NOT_STARTED |
+| POS-034 | Lost & found animal reporting (dual flow) | PB-051, PB-052 | DONE |
+| POS-035 | Public sighting submission & coordinates | PB-055 | DONE |
+| POS-036 | Match candidates generation (rule-based + AI) | PB-056, PB-088 | DONE |
+| POS-037 | Human match review & candidate dismissal | PB-056, PB-061 | DONE |
+| POS-038 | Rescue request creation & urgency triage | PB-057, PB-059 | DONE |
+| POS-039 | Volunteer rescue assignment, history & closure | PB-058, PB-060 | DONE |
 | POS-040 | Conversation management & authorization | PB-062 | NOT_STARTED |
 | POS-041 | Realtime messaging & delivery/read states | PB-063, PB-064 | NOT_STARTED |
 | POS-042 | In-app notification center & preferences | PB-065 | NOT_STARTED |
