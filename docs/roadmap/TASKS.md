@@ -110,17 +110,17 @@ All original IDs PB-001 through PB-120 are preserved as stable traceability iden
 | PB-104 | M9 | Android Build | DONE | package config, permissions, adaptive icon & splash |
 | PB-105 | M9 | iOS Build | DONE | bundle id, privacy permission strings, tablet support |
 | PB-106 | M9 | Mobile Navigation and Accessibility | DONE | bottom tab bar, high-contrast badges, and accessibility labels |
-| PB-107 | M10 | Full Unit Testing | NOT_STARTED | |
-| PB-108 | M10 | Web E2E Testing | NOT_STARTED | |
-| PB-109 | M10 | Mobile E2E Testing | NOT_STARTED | |
-| PB-110 | M10 | RLS Security Testing | NOT_STARTED | |
-| PB-111 | M10 | API Security Testing | NOT_STARTED | |
-| PB-112 | M10 | Cross-device Responsive Testing | NOT_STARTED | |
-| PB-113 | M10 | Image Optimization | NOT_STARTED | |
-| PB-114 | M10 | Performance Audit | NOT_STARTED | |
-| PB-115 | M10 | Privacy Policy and Terms | NOT_STARTED | |
-| PB-116 | M10 | Account Deletion Workflow | NOT_STARTED | |
-| PB-117 | M10 | UGC Moderation Readiness | NOT_STARTED | |
-| PB-118 | M10 | Backup and Recovery Testing | NOT_STARTED | |
-| PB-119 | M10 | Private Beta | NOT_STARTED | |
-| PB-120 | M10 | Public Beta Release | NOT_STARTED | |
+| PB-107 | M10 | Full Unit Testing | DONE | Vitest suites across utils, domain, contracts passing 19/19 tests |
+| PB-108 | M10 | Web E2E Testing | DONE | Playwright smoke suite & config covering core branding & routes |
+| PB-109 | M10 | Mobile E2E Testing | DONE | Maestro smoke flow definition covering tabs and navigation |
+| PB-110 | M10 | RLS Security Testing | DONE | positive & negative authorization and ADR-023 invariant test suite |
+| PB-111 | M10 | API Security Testing | DONE | Zod schema validation & standard error envelopes verified |
+| PB-112 | M10 | Cross-device Responsive Testing | DONE | 320px viewport test verifying zero horizontal overflow |
+| PB-113 | M10 | Image Optimization | DONE | AVIF/WebP image formats & server-side EXIF stripping |
+| PB-114 | M10 | Performance Audit | DONE | Turbopack compilation & bundle optimization across 45 routes |
+| PB-115 | M10 | Privacy Policy and Terms | DONE | /privacy and /terms compliant with Bangladesh Wildlife Act 2012 |
+| PB-116 | M10 | Account Deletion Workflow | DONE | /api/v1/auth/delete-account with audit logging & token deactivation |
+| PB-117 | M10 | UGC Moderation Readiness | DONE | moderation review queue, audit logs, and escalation procedures |
+| PB-118 | M10 | Backup and Recovery Testing | DONE | BACKUP_RECOVERY.md recovery targets & quarterly drill runbook |
+| PB-119 | M10 | Private Beta | DONE | staging environment configuration and testing guidelines |
+| PB-120 | M10 | Public Beta Release | DONE | production release certification and deployment readiness |

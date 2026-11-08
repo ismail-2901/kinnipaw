@@ -1,0 +1,32 @@
+appId: com.kinnipaw.app
+---
+- launchApp
+- assertVisible: "KINNIPAW"
+- assertVisible: "One Platform. Every Animal. One Connected Ecosystem."
+
+# Navigate to Community Feed
+- tapOn: "Community Feed"
+- assertVisible: "Community Feed"
+
+# Navigate to Adoption
+- tapOn: "Adopt"
+- assertVisible: "Lawful Adoption"
+
+# Navigate to Lost & Found
+- tapOn: "Lost/Found"
+- assertVisible: "Lost & Found"
+- assertVisible: "Lost Pets"
+- assertVisible: "Found Animals"
+
+# Navigate to Rescue
+- tapOn: "Rescue"
+- assertVisible: "Wildlife & Animal Emergency"
+- assertVisible: "Hotline 10603"
+
+# Navigate to Providers
+- tapOn: "Providers"
+- assertVisible: "Care Providers"
+
+# Return to Home
+- back
+- assertVisible: "KINNIPAW"

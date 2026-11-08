@@ -84,12 +84,12 @@ This table maps each requirement work package from the HTML Foundation roadmap (
 | POS-060 | Native mobile push notifications (APNs / FCM) | PB-101 | DONE |
 | POS-061 | Native device permissions (camera, photos, location) | PB-103 | DONE |
 | POS-062 | Store assets, bundle config & app metadata | PB-104, PB-105, PB-106 | DONE |
-| POS-063 | Comprehensive security audit (RLS, API, headers) | PB-110, PB-111 | NOT_STARTED |
-| POS-064 | Performance audit, CDN & image optimization | PB-113, PB-114 | NOT_STARTED |
-| POS-065 | Accessibility audit (WCAG AA) & responsive checks | PB-106, PB-112 | NOT_STARTED |
-| POS-066 | Backup, restore & disaster recovery rehearsal | PB-118 | NOT_STARTED |
-| POS-067 | Private beta execution & feedback loop | PB-119 | NOT_STARTED |
-| POS-068 | Production rollout, observability & public launch | PB-115, PB-116, PB-117, PB-120 | NOT_STARTED |
+| POS-063 | Comprehensive security audit (RLS, API, headers) | PB-110, PB-111 | DONE |
+| POS-064 | Performance audit, CDN & image optimization | PB-113, PB-114 | DONE |
+| POS-065 | Accessibility audit (WCAG AA) & responsive checks | PB-106, PB-112 | DONE |
+| POS-066 | Backup, restore & disaster recovery rehearsal | PB-118 | DONE |
+| POS-067 | Private beta execution & feedback loop | PB-119 | DONE |
+| POS-068 | Production rollout, observability & public launch | PB-115, PB-116, PB-117, PB-120 | DONE |
 
 ---
 
