@@ -43,13 +43,13 @@ This table maps each requirement work package from the HTML Foundation roadmap (
 | POS-019 | Animal photos & sanitized media gallery | PB-028 | DONE |
 | POS-020 | Care timeline & health record history | PB-068 | NOT_STARTED |
 | POS-021 | Care reminders (vaccinations, grooming) | PB-069 | NOT_STARTED |
-| POS-022 | Social community feed & infinite scroll | PB-032, PB-038, PB-039, PB-041 | NOT_STARTED |
-| POS-023 | Post creation with media & sanitization | PB-033 | NOT_STARTED |
-| POS-024 | Comments & threaded replies | PB-034 | NOT_STARTED |
-| POS-025 | Community post reactions & counts | PB-035 | NOT_STARTED |
-| POS-026 | Follow / unfollow user & animal profiles | PB-036 | NOT_STARTED |
-| POS-027 | Bookmarks & topic/hashtag filtering | PB-037, PB-039 | NOT_STARTED |
-| POS-028 | Community groups & member interactions | PB-032, PB-039 | NOT_STARTED |
+| POS-022 | Social community feed & infinite scroll | PB-032, PB-038, PB-039, PB-041 | DONE |
+| POS-023 | Post creation with media & sanitization | PB-033 | DONE |
+| POS-024 | Comments & threaded replies | PB-034 | DONE |
+| POS-025 | Community post reactions & counts | PB-035 | DONE |
+| POS-026 | Follow / unfollow user & animal profiles | PB-036 | DONE |
+| POS-027 | Bookmarks & topic/hashtag filtering | PB-037, PB-039 | DONE |
+| POS-028 | Community groups & member interactions | PB-032, PB-039 | DONE |
 | POS-029 | Adoption listings CRUD & review workflow | PB-042, PB-044, PB-049 | NOT_STARTED |
 | POS-030 | Adoption search & multi-criteria filtering | PB-043 | NOT_STARTED |
 | POS-031 | Adoption application submission & dashboard | PB-045, PB-046 | NOT_STARTED |

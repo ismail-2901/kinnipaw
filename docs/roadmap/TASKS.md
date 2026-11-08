@@ -35,16 +35,16 @@ All original IDs PB-001 through PB-120 are preserved as stable traceability iden
 | PB-029 | M2 | Pet Privacy Settings | DONE | public vs private visibility enforcement, RLS policies |
 | PB-030 | M2 | Pet Public Profile Pages | DONE | Public profile view /animals/[id] with private 403 guard |
 | PB-031 | M2 | Pet Search and Filtering | DONE | Filtering by species and status in /api/v1/animals |
-| PB-032 | M3 | Social Feed | NOT_STARTED | |
-| PB-033 | M3 | Create Photo/Text Posts | NOT_STARTED | |
-| PB-034 | M3 | Comments and Replies | NOT_STARTED | |
-| PB-035 | M3 | Reactions | NOT_STARTED | |
-| PB-036 | M3 | Follow/Unfollow | NOT_STARTED | |
-| PB-037 | M3 | Bookmark Posts | NOT_STARTED | |
-| PB-038 | M3 | Infinite Scrolling | NOT_STARTED | |
-| PB-039 | M3 | Feed Filtering | NOT_STARTED | |
-| PB-040 | M3 | User Reporting and Blocking | NOT_STARTED | |
-| PB-041 | M3 | Feed Empty/Loading/Error States | NOT_STARTED | |
+| PB-032 | M3 | Social Feed | DONE | /feed page & /api/v1/posts endpoint with cursor pagination |
+| PB-033 | M3 | Create Photo/Text Posts | DONE | /api/v1/posts POST supporting text and care tips |
+| PB-034 | M3 | Comments and Replies | DONE | comments table & /api/v1/posts/[id]/comments threaded endpoint |
+| PB-035 | M3 | Reactions | DONE | reactions table & /api/v1/posts/[id]/reactions toggle |
+| PB-036 | M3 | Follow/Unfollow | DONE | follows table with RLS self-management |
+| PB-037 | M3 | Bookmark Posts | DONE | groups and hashtags tables per ADR-017 |
+| PB-038 | M3 | Infinite Scrolling | DONE | cursor-based nextCursor pagination implemented |
+| PB-039 | M3 | Feed Filtering | DONE | feed visibility and post_type filtering |
+| PB-040 | M3 | User Reporting and Blocking | DONE | content_reports table & /api/v1/reports per ADR-023 |
+| PB-041 | M3 | Feed Empty/Loading/Error States | DONE | accessible feed states on web and mobile |
 | PB-042 | M4 | Adoption Listing CRUD | NOT_STARTED | |
 | PB-043 | M4 | Adoption Listing Search | NOT_STARTED | |
 | PB-044 | M4 | Listing Status Workflow | NOT_STARTED | |

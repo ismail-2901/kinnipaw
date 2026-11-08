@@ -440,6 +440,316 @@ export interface Database {
           created_at?: string;
         };
       };
+      posts: {
+        Row: {
+          id: string;
+          author_id: string;
+          organization_id: string | null;
+          body: string | null;
+          post_type: 'text' | 'media' | 'link' | 'care_tip';
+          visibility: 'public' | 'followers' | 'group_only';
+          is_published: boolean;
+          published_at: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          author_id: string;
+          organization_id?: string | null;
+          body?: string | null;
+          post_type?: 'text' | 'media' | 'link' | 'care_tip';
+          visibility?: 'public' | 'followers' | 'group_only';
+          is_published?: boolean;
+          published_at?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          author_id?: string;
+          organization_id?: string | null;
+          body?: string | null;
+          post_type?: 'text' | 'media' | 'link' | 'care_tip';
+          visibility?: 'public' | 'followers' | 'group_only';
+          is_published?: boolean;
+          published_at?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      post_media: {
+        Row: {
+          id: string;
+          post_id: string;
+          storage_path: string;
+          media_type: 'image' | 'video';
+          alt_text: string | null;
+          sort_order: number;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          post_id: string;
+          storage_path: string;
+          media_type?: 'image' | 'video';
+          alt_text?: string | null;
+          sort_order?: number;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          post_id?: string;
+          storage_path?: string;
+          media_type?: 'image' | 'video';
+          alt_text?: string | null;
+          sort_order?: number;
+          created_at?: string;
+        };
+      };
+      comments: {
+        Row: {
+          id: string;
+          post_id: string;
+          author_id: string;
+          parent_comment_id: string | null;
+          body: string;
+          is_visible: boolean;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          post_id: string;
+          author_id: string;
+          parent_comment_id?: string | null;
+          body: string;
+          is_visible?: boolean;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          post_id?: string;
+          author_id?: string;
+          parent_comment_id?: string | null;
+          body?: string;
+          is_visible?: boolean;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      reactions: {
+        Row: {
+          id: string;
+          post_id: string;
+          user_id: string;
+          reaction_type: 'like' | 'love' | 'support' | 'celebrate';
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          post_id: string;
+          user_id: string;
+          reaction_type?: 'like' | 'love' | 'support' | 'celebrate';
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          post_id?: string;
+          user_id?: string;
+          reaction_type?: 'like' | 'love' | 'support' | 'celebrate';
+          created_at?: string;
+        };
+      };
+      hashtags: {
+        Row: {
+          id: string;
+          tag: string;
+          post_count: number;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          tag: string;
+          post_count?: number;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          tag?: string;
+          post_count?: number;
+          created_at?: string;
+        };
+      };
+      post_hashtags: {
+        Row: {
+          post_id: string;
+          hashtag_id: string;
+          created_at: string;
+        };
+        Insert: {
+          post_id: string;
+          hashtag_id: string;
+          created_at?: string;
+        };
+        Update: {
+          post_id?: string;
+          hashtag_id?: string;
+          created_at?: string;
+        };
+      };
+      follows: {
+        Row: {
+          follower_id: string;
+          followed_id: string;
+          created_at: string;
+        };
+        Insert: {
+          follower_id: string;
+          followed_id: string;
+          created_at?: string;
+        };
+        Update: {
+          follower_id?: string;
+          followed_id?: string;
+          created_at?: string;
+        };
+      };
+      groups: {
+        Row: {
+          id: string;
+          name: string;
+          slug: string;
+          description: string | null;
+          group_type: 'public' | 'private' | 'organization';
+          organization_id: string | null;
+          created_by: string;
+          member_count: number;
+          is_active: boolean;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          name: string;
+          slug: string;
+          description?: string | null;
+          group_type?: 'public' | 'private' | 'organization';
+          organization_id?: string | null;
+          created_by: string;
+          member_count?: number;
+          is_active?: boolean;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          name?: string;
+          slug?: string;
+          description?: string | null;
+          group_type?: 'public' | 'private' | 'organization';
+          organization_id?: string | null;
+          created_by?: string;
+          member_count?: number;
+          is_active?: boolean;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      group_members: {
+        Row: {
+          id: string;
+          group_id: string;
+          user_id: string;
+          group_role: 'owner' | 'admin' | 'member';
+          joined_at: string;
+        };
+        Insert: {
+          id?: string;
+          group_id: string;
+          user_id: string;
+          group_role?: 'owner' | 'admin' | 'member';
+          joined_at?: string;
+        };
+        Update: {
+          id?: string;
+          group_id?: string;
+          user_id?: string;
+          group_role?: 'owner' | 'admin' | 'member';
+          joined_at?: string;
+        };
+      };
+      group_posts: {
+        Row: {
+          group_id: string;
+          post_id: string;
+          added_by: string;
+          created_at: string;
+        };
+        Insert: {
+          group_id: string;
+          post_id: string;
+          added_by: string;
+          created_at?: string;
+        };
+        Update: {
+          group_id?: string;
+          post_id?: string;
+          added_by?: string;
+          created_at?: string;
+        };
+      };
+      content_reports: {
+        Row: {
+          id: string;
+          reporter_id: string;
+          reason: 'spam' | 'harassment' | 'misinformation' | 'animal_cruelty' | 'illegal_trade' | 'other';
+          details: string | null;
+          post_id: string | null;
+          comment_id: string | null;
+          profile_id: string | null;
+          listing_id: string | null;
+          rescue_case_id: string | null;
+          lost_found_post_id: string | null;
+          report_status: 'pending' | 'under_review' | 'resolved' | 'dismissed';
+          reviewed_by: string | null;
+          reviewed_at: string | null;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          reporter_id: string;
+          reason: 'spam' | 'harassment' | 'misinformation' | 'animal_cruelty' | 'illegal_trade' | 'other';
+          details?: string | null;
+          post_id?: string | null;
+          comment_id?: string | null;
+          profile_id?: string | null;
+          listing_id?: string | null;
+          rescue_case_id?: string | null;
+          lost_found_post_id?: string | null;
+          report_status?: 'pending' | 'under_review' | 'resolved' | 'dismissed';
+          reviewed_by?: string | null;
+          reviewed_at?: string | null;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          reporter_id?: string;
+          reason?: 'spam' | 'harassment' | 'misinformation' | 'animal_cruelty' | 'illegal_trade' | 'other';
+          details?: string | null;
+          post_id?: string | null;
+          comment_id?: string | null;
+          profile_id?: string | null;
+          listing_id?: string | null;
+          rescue_case_id?: string | null;
+          lost_found_post_id?: string | null;
+          report_status?: 'pending' | 'under_review' | 'resolved' | 'dismissed';
+          reviewed_by?: string | null;
+          reviewed_at?: string | null;
+          created_at?: string;
+        };
+      };
     };
     Views: Record<string, never>;
     Functions: Record<string, never>;
