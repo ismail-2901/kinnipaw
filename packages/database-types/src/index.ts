@@ -750,6 +750,105 @@ export interface Database {
           created_at?: string;
         };
       };
+      adoption_listings: {
+        Row: {
+          id: string;
+          animal_id: string;
+          listed_by: string;
+          organization_id: string | null;
+          listing_status: 'draft' | 'active' | 'paused' | 'closed' | 'adopted';
+          description: string | null;
+          adoption_requirements: string | null;
+          fee_description: string | null;
+          listed_at: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          animal_id: string;
+          listed_by: string;
+          organization_id?: string | null;
+          listing_status?: 'draft' | 'active' | 'paused' | 'closed' | 'adopted';
+          description?: string | null;
+          adoption_requirements?: string | null;
+          fee_description?: string | null;
+          listed_at?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          animal_id?: string;
+          listed_by?: string;
+          organization_id?: string | null;
+          listing_status?: 'draft' | 'active' | 'paused' | 'closed' | 'adopted';
+          description?: string | null;
+          adoption_requirements?: string | null;
+          fee_description?: string | null;
+          listed_at?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      adoption_applications: {
+        Row: {
+          id: string;
+          listing_id: string;
+          applicant_id: string;
+          application_status: 'submitted' | 'under_review' | 'approved' | 'rejected' | 'withdrawn';
+          answers: Json | null;
+          submitted_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          listing_id: string;
+          applicant_id: string;
+          application_status?: 'submitted' | 'under_review' | 'approved' | 'rejected' | 'withdrawn';
+          answers?: Json | null;
+          submitted_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          listing_id?: string;
+          applicant_id?: string;
+          application_status?: 'submitted' | 'under_review' | 'approved' | 'rejected' | 'withdrawn';
+          answers?: Json | null;
+          submitted_at?: string;
+          updated_at?: string;
+        };
+      };
+      adoption_status_history: {
+        Row: {
+          id: string;
+          application_id: string;
+          from_status: string | null;
+          to_status: string;
+          changed_by: string;
+          notes: string | null;
+          changed_at: string;
+        };
+        Insert: {
+          id?: string;
+          application_id: string;
+          from_status?: string | null;
+          to_status: string;
+          changed_by: string;
+          notes?: string | null;
+          changed_at?: string;
+        };
+        Update: {
+          id?: string;
+          application_id?: string;
+          from_status?: string | null;
+          to_status?: string;
+          changed_by?: string;
+          notes?: string | null;
+          changed_at?: string;
+        };
+      };
     };
     Views: Record<string, never>;
     Functions: Record<string, never>;

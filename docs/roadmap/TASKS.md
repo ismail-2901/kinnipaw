@@ -45,15 +45,15 @@ All original IDs PB-001 through PB-120 are preserved as stable traceability iden
 | PB-039 | M3 | Feed Filtering | DONE | feed visibility and post_type filtering |
 | PB-040 | M3 | User Reporting and Blocking | DONE | content_reports table & /api/v1/reports per ADR-023 |
 | PB-041 | M3 | Feed Empty/Loading/Error States | DONE | accessible feed states on web and mobile |
-| PB-042 | M4 | Adoption Listing CRUD | NOT_STARTED | |
-| PB-043 | M4 | Adoption Listing Search | NOT_STARTED | |
-| PB-044 | M4 | Listing Status Workflow | NOT_STARTED | |
-| PB-045 | M4 | Adoption Application | NOT_STARTED | |
-| PB-046 | M4 | Applicant Dashboard | NOT_STARTED | |
-| PB-047 | M4 | Owner Application Management | NOT_STARTED | |
-| PB-048 | M4 | Application History | NOT_STARTED | |
-| PB-049 | M4 | Listing Verification Workflow | NOT_STARTED | |
-| PB-050 | M4 | Adoption Completion Process | NOT_STARTED | |
+| PB-042 | M4 | Adoption Listing CRUD | DONE | adoption_listings table, RLS & /api/v1/adoption/listings |
+| PB-043 | M4 | Adoption Listing Search | DONE | species/size/sex filtering on web & mobile |
+| PB-044 | M4 | Listing Status Workflow | DONE | draft/active/paused/closed/adopted transitions |
+| PB-045 | M4 | Adoption Application | DONE | multi-step application form & /api/v1/adoption/applications |
+| PB-046 | M4 | Applicant Dashboard | DONE | /adoption and application tracking |
+| PB-047 | M4 | Owner Application Management | DONE | /api/v1/adoption/applications/[id] PATCH review |
+| PB-048 | M4 | Application History | DONE | adoption_status_history audit trail trigger |
+| PB-049 | M4 | Listing Verification Workflow | DONE | domestic species check & anti-wildlife trade RLS |
+| PB-050 | M4 | Adoption Completion Process | DONE | auto-transition listing to adopted upon approval |
 | PB-051 | M5 | Lost Pet Reports | NOT_STARTED | |
 | PB-052 | M5 | Found Pet Reports | NOT_STARTED | |
 | PB-053 | M5 | Geographic Filtering | NOT_STARTED | |

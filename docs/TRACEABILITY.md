@@ -50,11 +50,11 @@ This table maps each requirement work package from the HTML Foundation roadmap (
 | POS-026 | Follow / unfollow user & animal profiles | PB-036 | DONE |
 | POS-027 | Bookmarks & topic/hashtag filtering | PB-037, PB-039 | DONE |
 | POS-028 | Community groups & member interactions | PB-032, PB-039 | DONE |
-| POS-029 | Adoption listings CRUD & review workflow | PB-042, PB-044, PB-049 | NOT_STARTED |
-| POS-030 | Adoption search & multi-criteria filtering | PB-043 | NOT_STARTED |
-| POS-031 | Adoption application submission & dashboard | PB-045, PB-046 | NOT_STARTED |
-| POS-032 | Application review, status history & completion | PB-047, PB-048, PB-050 | NOT_STARTED |
-| POS-033 | Safe contact, anti-scam guidance & screening | PB-042, PB-045, PB-062 | NOT_STARTED |
+| POS-029 | Adoption listings CRUD & review workflow | PB-042, PB-044, PB-049 | DONE |
+| POS-030 | Adoption search & multi-criteria filtering | PB-043 | DONE |
+| POS-031 | Adoption application submission & dashboard | PB-045, PB-046 | DONE |
+| POS-032 | Application review, status history & completion | PB-047, PB-048, PB-050 | DONE |
+| POS-033 | Safe contact, anti-scam guidance & screening | PB-042, PB-045, PB-062 | DONE |
 | POS-034 | Lost & found animal reporting (dual flow) | PB-051, PB-052 | NOT_STARTED |
 | POS-035 | Public sighting submission & coordinates | PB-055 | NOT_STARTED |
 | POS-036 | Match candidates generation (rule-based + AI) | PB-056, PB-088 | NOT_STARTED |
