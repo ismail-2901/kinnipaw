@@ -134,6 +134,7 @@ export interface Database {
         Row: {
           id: string;
           name: string;
+          common_name: string;
           slug: string;
           is_domestic: boolean;
           is_active: boolean;
@@ -143,6 +144,7 @@ export interface Database {
         Insert: {
           id?: string;
           name: string;
+          common_name?: string;
           slug: string;
           is_domestic?: boolean;
           is_active?: boolean;
@@ -152,6 +154,7 @@ export interface Database {
         Update: {
           id?: string;
           name?: string;
+          common_name?: string;
           slug?: string;
           is_domestic?: boolean;
           is_active?: boolean;
