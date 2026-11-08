@@ -1,0 +1,183 @@
+# STUB — See docs/api/API.md for endpoint inventory. This file will be populated during M1.
+# Status: STUB | Last updated: 2026-11-08 | M0 Documentation Reconciliation
+
+openapi: 3.1.0
+info:
+  title: KINNIPAW API
+  version: 1.0.0
+  description: >
+    Bangladesh-first animal community, responsible care and adoption where lawful,
+    lost-and-found, rescue coordination, and animal-welfare ecosystem REST API v1.
+  contact:
+    name: KINNIPAW Engineering Team
+  license:
+    name: Proprietary
+
+servers:
+  - url: /api/v1
+    description: KINNIPAW REST API v1
+
+security:
+  - bearerAuth: []
+
+paths:
+  # Endpoints to be added per docs/api/API.md during M1 implementation
+  /me:
+    get:
+      summary: Get current authenticated user profile
+      description: Returns the authenticated user's profile, roles, and settings.
+      operationId: getCurrentUser
+      responses:
+        '200':
+          description: User profile retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        '401':
+          description: Unauthenticated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /animals:
+    get:
+      summary: Search and filter animal profiles
+      description: Returns a paginated list of animals according to privacy and visibility filters.
+      operationId: listAnimals
+      parameters:
+        - name: cursor
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 20
+        - name: species_id
+          in: query
+          required: false
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Animal list retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+
+  /adoption/listings:
+    get:
+      summary: List adoption listings
+      description: Retrieves public, active adoption listings with search and filter parameters.
+      operationId: listAdoptionListings
+      responses:
+        '200':
+          description: Adoption listings retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+
+  /lost-found/reports:
+    get:
+      summary: Search lost and found animal reports
+      description: Returns active lost and found reports filtered by location and species.
+      operationId: listLostFoundReports
+      responses:
+        '200':
+          description: Lost and found reports retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+
+  /rescue/requests:
+    get:
+      summary: List rescue requests
+      description: Returns rescue requests filtered by urgency and jurisdiction.
+      operationId: listRescueRequests
+      responses:
+        '200':
+          description: Rescue requests retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: Supabase Auth session access token (JWT) passed in the Authorization header.
+
+  schemas:
+    SuccessResponse:
+      type: object
+      required:
+        - success
+        - data
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          type: object
+          description: The returned payload data.
+        meta:
+          type: object
+          nullable: true
+          description: Pagination cursors, request tracing ID, and metadata.
+          properties:
+            requestId:
+              type: string
+              example: "req_01h8x7k8p9m..."
+            nextCursor:
+              type: string
+              nullable: true
+              example: "cursor_eyJjcmVhdGVkX2F0Ijo..."
+            totalCount:
+              type: integer
+              nullable: true
+              example: 42
+
+    ErrorResponse:
+      type: object
+      required:
+        - success
+        - error
+      properties:
+        success:
+          type: boolean
+          example: false
+        error:
+          type: object
+          required:
+            - code
+            - message
+            - requestId
+          properties:
+            code:
+              type: string
+              example: "FORBIDDEN"
+              description: Machine-readable error code.
+            message:
+              type: string
+              example: "You do not have permission to perform this action."
+              description: Human-readable error message.
+            details:
+              type: object
+              nullable: true
+              description: Optional validation errors or context-specific error details.
+            requestId:
+              type: string
+              example: "req_01h8x7k8p9m..."
+              description: Unique trace ID for correlation with server logs.

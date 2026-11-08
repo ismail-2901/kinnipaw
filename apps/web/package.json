@@ -1,0 +1,38 @@
+{
+  "name": "@kinnipaw/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "clean": "rimraf .next out dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@kinnipaw/api-client": "workspace:*",
+    "@kinnipaw/config": "workspace:*",
+    "@kinnipaw/contracts": "workspace:*",
+    "@kinnipaw/design-tokens": "workspace:*",
+    "@kinnipaw/domain": "workspace:*",
+    "@kinnipaw/utils": "workspace:*",
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.49.1",
+    "@tailwindcss/postcss": "4.3.5",
+    "next": "16.4.5",
+    "postcss": "^8.5.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "tailwindcss": "4.3.5",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@kinnipaw/eslint-config": "workspace:*",
+    "@kinnipaw/tsconfig": "workspace:*",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.8.2"
+  }
+}

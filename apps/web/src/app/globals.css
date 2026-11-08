@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #245B45;
+  --color-secondary: #66856C;
+  --color-ivory: #FAF9F6;
+  --color-charcoal: #252A27;
+  --color-terracotta: #D98769;
+  --color-neutral: #E8E6E0;
+
+  --font-sans: var(--font-geist-sans), "Noto Sans Bengali", system-ui, sans-serif;
+  --font-bengali: "Noto Sans Bengali", var(--font-geist-sans), sans-serif;
+}
+
+:root {
+  --background: #FAF9F6;
+  --foreground: #252A27;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}

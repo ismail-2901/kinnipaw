@@ -1,0 +1,8 @@
+.next
+dist
+out
+node_modules
+.turbo
+coverage
+*.tsbuildinfo
+supabase/.temp

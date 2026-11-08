@@ -1,0 +1,240 @@
+{
+  "project": "KINNIPAW",
+  "brand_status": "provisional; user-selected canonical name KINNIPAW; trademark, domain, company, social and app-store clearance required",
+  "tagline": "One Platform. Every Animal. One Connected Ecosystem.",
+  "file_count_before_manifest": 46,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 7090,
+      "sha256": "58da97d6ba3668c1a13c3ed0cc983258af82c6679b1e4115990951cf5443972d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2460,
+      "sha256": "a1921f9bf68d75dbd5d8271236bbbc7d838771ba7cfe4ebd07b76cf282cf0a4e"
+    },
+    {
+      "path": "antigravity/prompts/01-create-documentation-structure.md",
+      "bytes": 892,
+      "sha256": "a4a156a2699aa4a5747bad90b05fead1f4a33be10c879018025b3c9dfd1b320b"
+    },
+    {
+      "path": "antigravity/prompts/02-brand-identity.md",
+      "bytes": 527,
+      "sha256": "036e9fae089e7a1fc7f0f420a36642f313299ae6844529daf410a708b503d535"
+    },
+    {
+      "path": "antigravity/prompts/03-generate-canonical-docs.md",
+      "bytes": 1347,
+      "sha256": "94da69db29e3db193780343eda55b9cc6e95a5b6caa278f113d86770d12fd0d1"
+    },
+    {
+      "path": "antigravity/prompts/04-documentation-audit.md",
+      "bytes": 970,
+      "sha256": "031602ce1eda8255e5dfb28a94c390b7a7a2e445d562b081e98dc7ff35f2ae91"
+    },
+    {
+      "path": "antigravity/prompts/05-m1-foundation.md",
+      "bytes": 1256,
+      "sha256": "1bbb1949f0b3c41d7eff6cde4ccfd182805ffc1ef476e92817d60a0436bfb480"
+    },
+    {
+      "path": "antigravity/prompts/06-feature-task-template.md",
+      "bytes": 1259,
+      "sha256": "e1cb58e7ea90149b7e1c5b9d15d753f2897be85456b4fb7b4f0f302dc036bc23"
+    },
+    {
+      "path": "antigravity/prompts/07-database-migration-template.md",
+      "bytes": 763,
+      "sha256": "b033d175a45edd481913141d3c691b85befc2a60da93427b8690e107d0b10dff"
+    },
+    {
+      "path": "antigravity/prompts/08-security-review.md",
+      "bytes": 734,
+      "sha256": "e6e5aa320a9d35babd01a049af0f37f79f84eda87b47200bb973c009d5c0fb19"
+    },
+    {
+      "path": "antigravity/prompts/09-session-starter.md",
+      "bytes": 720,
+      "sha256": "797c5a8287ba056ebd3fbf76a2a46d4250eaf129b5262dc1f377baaea6d762d6"
+    },
+    {
+      "path": "antigravity/prompts/10-final-milestone-review.md",
+      "bytes": 867,
+      "sha256": "5429fa6ff6771033e9d1d842e49b26d188eccdb35736e3d2900185f1d4aa5555"
+    },
+    {
+      "path": "docs/ANTIGRAVITY_EXECUTION_CONTRACT.md",
+      "bytes": 2129,
+      "sha256": "09f0abf805146c1726a3c450e81e3b54a4eeb118de0650e0bed40728908bde59"
+    },
+    {
+      "path": "docs/OPEN_QUESTIONS.md",
+      "bytes": 1086,
+      "sha256": "8fb14dc7350fe0a6cbe1f3bd3fa9e1860db728d48599de178480bd9836d71de7"
+    },
+    {
+      "path": "docs/START_HERE.md",
+      "bytes": 1551,
+      "sha256": "9cd51829adaa22d8f411085d2b43291778c227ad0158f6b7d33556b569aadee5"
+    },
+    {
+      "path": "docs/TRACEABILITY.md",
+      "bytes": 2697,
+      "sha256": "bd468de4546789af2f381e75244551fa7a289f98ccc91d3d98543365f308ff8c"
+    },
+    {
+      "path": "docs/ai/AI_SPEC.md",
+      "bytes": 2806,
+      "sha256": "55b40e40b8ba4e1c26cdcde4dae74493c6a64a123a60986eafa3a0ce17275c64"
+    },
+    {
+      "path": "docs/api/API.md",
+      "bytes": 9305,
+      "sha256": "eb5bd87333f623da18bda28ed6269ca4817ea421ced84f6b60cf7a12618a37a6"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE.md",
+      "bytes": 3574,
+      "sha256": "753900c41d1a38f680640f591aa181cadeaa4603fc012ef8bb52a3313e7c465e"
+    },
+    {
+      "path": "docs/architecture/DECISIONS.md",
+      "bytes": 2894,
+      "sha256": "dc106d287835cfe5e96a7a1c1ca6daadea464540c545f9489003f755c5cce420"
+    },
+    {
+      "path": "docs/architecture/REPOSITORY_STRUCTURE.md",
+      "bytes": 1244,
+      "sha256": "ae5df15ab07e6bd09cb916d178fa0a29926328b0d58264bd741ba777a6dd6639"
+    },
+    {
+      "path": "docs/database/ERD.md",
+      "bytes": 3471,
+      "sha256": "aa447baccc5088c8ca7b37cd247ff1f79bfeabc87cad92f9345083adf371d8cc"
+    },
+    {
+      "path": "docs/database/MIGRATIONS.md",
+      "bytes": 1972,
+      "sha256": "853cedebbf19f65008c789e14f630b6b794e493d9b7b0fa95e7459306a48bb24"
+    },
+    {
+      "path": "docs/database/SCHEMA_SPEC.md",
+      "bytes": 18589,
+      "sha256": "a60b9b2aa73208c49e7a9ad6da85e113485e8cf7cf93e0e7b74df1ea0952c0a1"
+    },
+    {
+      "path": "docs/design/UI_UX_SPEC.md",
+      "bytes": 3199,
+      "sha256": "34a2d01e6400cac2b7d68b956f2fe37a257abf9dd7f1dbf0d38367f646d2381c"
+    },
+    {
+      "path": "docs/mobile/MOBILE_SPEC.md",
+      "bytes": 1714,
+      "sha256": "eb65a9576d3d0b80a6a96f5f1ff62cf74be50eb7e12b7cdd038c890ad4772297"
+    },
+    {
+      "path": "docs/operations/DEPLOYMENT.md",
+      "bytes": 2753,
+      "sha256": "6a8b0a62f9d8672d5ef078a46dbcd6f8273bba2dabc64afc7eff86e688ac0cf9"
+    },
+    {
+      "path": "docs/product/BRAND_IDENTITY.md",
+      "bytes": 3594,
+      "sha256": "f2165a9463e7b1ec02976669eb2f674a71aeced1358aa31364579a7ef38f9935"
+    },
+    {
+      "path": "docs/product/PRD.md",
+      "bytes": 7842,
+      "sha256": "9de60a63c6ddbd401b6916ba17432e6a9b5e99a568510a422171dcdc5e3c5f1c"
+    },
+    {
+      "path": "docs/product/USER_FLOWS.md",
+      "bytes": 3477,
+      "sha256": "178d60b68b15ce524a7ef4257fbc39231db163d41d5ccd77f025d64d8d6cd500"
+    },
+    {
+      "path": "docs/roadmap/DOCUMENTATION_AUDIT.md",
+      "bytes": 1856,
+      "sha256": "d5a0e5aa310a751fd8d3ef8877db91e6c25e485cb165dcd9f35a9be8afafc235"
+    },
+    {
+      "path": "docs/roadmap/ROADMAP.md",
+      "bytes": 1849,
+      "sha256": "20cd47cf0d6342c33184a2c447fcd7bb12161130b481a17284b108e7a5ceab0e"
+    },
+    {
+      "path": "docs/roadmap/TASKS.md",
+      "bytes": 7062,
+      "sha256": "661e2d28a024a765bdef6ec498ecfa94c9ed99011e16b63830a3894e6fce4c12"
+    },
+    {
+      "path": "docs/security/RBAC.md",
+      "bytes": 4291,
+      "sha256": "1b6644e2b87003dfdb70e18e52fd5104d65837f32f43c588555bf815e8b32cf1"
+    },
+    {
+      "path": "docs/security/SECURITY.md",
+      "bytes": 4638,
+      "sha256": "d802461a56ddeda4e3dacf1fe85264c612de65c6f533782d29c624492f5d392f"
+    },
+    {
+      "path": "docs/source/00-authoritative-project-context.md",
+      "bytes": 3793,
+      "sha256": "6b10b2770a870958f6a7d880dd8b233598d2ad44f080fc4e88236225a46099ee"
+    },
+    {
+      "path": "docs/source/01-product-and-brand.md",
+      "bytes": 1532,
+      "sha256": "f08a88dbe17b3f3604d6c09a06fe73b0d3d443b6529a6ad396f1eb86c1203dad"
+    },
+    {
+      "path": "docs/source/02-technology-stack.md",
+      "bytes": 1143,
+      "sha256": "f4978d6750a327b11bdfad77a64af3ab8ed1848aef55edb46ec90a7d89b082f4"
+    },
+    {
+      "path": "docs/source/03-architecture-and-repository.md",
+      "bytes": 1101,
+      "sha256": "e412721db83f5ee717ca930240d45332f048c8f05b56487e39d51f31d278903c"
+    },
+    {
+      "path": "docs/source/04-database-and-erd.md",
+      "bytes": 15198,
+      "sha256": "782a86a84f0cebfd8051a1466320675f5bea1e96e4c80b680a48010440c49897"
+    },
+    {
+      "path": "docs/source/05-rbac-security.md",
+      "bytes": 982,
+      "sha256": "54594d9897ad44fdcb05f2510a86a68d19899feac7ba937158055e4435436ebe"
+    },
+    {
+      "path": "docs/source/06-api-inventory.md",
+      "bytes": 9305,
+      "sha256": "eb5bd87333f623da18bda28ed6269ca4817ea421ced84f6b60cf7a12618a37a6"
+    },
+    {
+      "path": "docs/source/07-ui-mobile-ai-operations.md",
+      "bytes": 1699,
+      "sha256": "945eab1e4c088e36030f53a774b201f9da8fc134e96a5d92f02baabf854c4ab3"
+    },
+    {
+      "path": "docs/source/08-performance-launch.md",
+      "bytes": 1628,
+      "sha256": "aae39d1b1983aea17e97290c777a3c66925edc16913a80e1e1229189f89c98c4"
+    },
+    {
+      "path": "docs/source/09-implementation-roadmap.md",
+      "bytes": 257,
+      "sha256": "01ab24605bbb1bb8e229c5b8aa915bda42cd2e5412fc89ac3e1e1e334f57286d"
+    },
+    {
+      "path": "docs/source/10-brand-name-decision.md",
+      "bytes": 1465,
+      "sha256": "54df75073a0da46fec0be66608815a0158222d93ff774061e332b19a16253c9b"
+    }
+  ],
+  "brand_name": "KINNIPAW",
+  "brand_spelling": "K-I-N-N-I-P-A-W"
+}
