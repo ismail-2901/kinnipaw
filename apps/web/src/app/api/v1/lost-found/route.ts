@@ -20,7 +20,7 @@ export async function GET(request: NextRequest) {
       .from('lost_found_posts')
       .select(`
         *,
-        reporter:profiles(id, username, display_name, avatar_path, city, area_label),
+        reporter:profiles!lost_found_posts_reporter_id_fkey(id, username, display_name, avatar_path, city, area_label),
         species:species(id, common_name, is_domestic),
         animal:animals(id, name, breed_id, sex, size_category, breeds(name))
       `)
