@@ -9,7 +9,11 @@ export function slugify(text: string): string {
 }
 
 export function sanitizeInput(input: string): string {
-  return input.trim().replace(/<[^>]*>?/gm, '');
+  return input
+    .trim()
+    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+    .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '')
+    .replace(/<[^>]*>?/gm, '');
 }
 
 /**

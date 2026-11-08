@@ -36,11 +36,11 @@ This table maps each requirement work package from the HTML Foundation roadmap (
 | POS-012 | Supabase local/dev environment & migrations | PB-015, PB-016, PB-017, PB-018, PB-019 | DONE |
 | POS-013 | CI quality gates & GitHub Actions | PB-021 | DONE |
 | POS-014 | Environment configuration & validation | PB-022 | DONE |
-| POS-015 | Authentication & session management | PB-020, PB-023 | NOT_STARTED |
-| POS-016 | User profile management & avatar upload | PB-024, PB-025 | NOT_STARTED |
-| POS-017 | User onboarding flow & initial setup | PB-024 | NOT_STARTED |
-| POS-018 | Animal profile CRUD, search & filtering | PB-026, PB-027, PB-030, PB-031 | NOT_STARTED |
-| POS-019 | Animal photos & sanitized media gallery | PB-028 | NOT_STARTED |
+| POS-015 | Authentication & session management | PB-020, PB-023 | DONE |
+| POS-016 | User profile management & avatar upload | PB-024, PB-025 | DONE |
+| POS-017 | User onboarding flow & initial setup | PB-024 | DONE |
+| POS-018 | Animal profile CRUD, search & filtering | PB-026, PB-027, PB-030, PB-031 | DONE |
+| POS-019 | Animal photos & sanitized media gallery | PB-028 | DONE |
 | POS-020 | Care timeline & health record history | PB-068 | NOT_STARTED |
 | POS-021 | Care reminders (vaccinations, grooming) | PB-069 | NOT_STARTED |
 | POS-022 | Social community feed & infinite scroll | PB-032, PB-038, PB-039, PB-041 | NOT_STARTED |

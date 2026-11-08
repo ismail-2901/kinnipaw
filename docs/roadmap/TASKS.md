@@ -26,15 +26,15 @@ All original IDs PB-001 through PB-120 are preserved as stable traceability iden
 | PB-020 | M1 | Create Auth Integration | DONE | Web SSR proxy.ts & Mobile AsyncStorage Supabase clients |
 | PB-021 | M1 | Create GitHub Actions CI | DONE | .github/workflows/ci.yml with Node 24 and pnpm 12 |
 | PB-022 | M1 | Configure Environment Validation | DONE | packages/config with Zod schemas for web and mobile envs |
-| PB-023 | M2 | Registration and Login | NOT_STARTED | |
-| PB-024 | M2 | User Profile Management | NOT_STARTED | |
-| PB-025 | M2 | User Avatar Upload | NOT_STARTED | |
-| PB-026 | M2 | Create Multiple Pet Profiles | NOT_STARTED | |
-| PB-027 | M2 | Edit and Archive Animals | NOT_STARTED | |
-| PB-028 | M2 | Pet Photo Gallery | NOT_STARTED | |
-| PB-029 | M2 | Pet Privacy Settings | NOT_STARTED | |
-| PB-030 | M2 | Pet Public Profile Pages | NOT_STARTED | |
-| PB-031 | M2 | Pet Search and Filtering | NOT_STARTED | |
+| PB-023 | M2 | Registration and Login | DONE | Web & Mobile auth forms, proxy session management |
+| PB-024 | M2 | User Profile Management | DONE | profiles table, /api/v1/profiles GET/PATCH, Zod validation |
+| PB-025 | M2 | User Avatar Upload | DONE | EXIF stripping utility, Supabase storage avatar integration |
+| PB-026 | M2 | Create Multiple Pet Profiles | DONE | animals table, /api/v1/animals, /animals/new form |
+| PB-027 | M2 | Edit and Archive Animals | DONE | /api/v1/animals/[id] PATCH & DELETE with owner validation |
+| PB-028 | M2 | Pet Photo Gallery | DONE | animal_media table, RLS media viewable only if animal viewable |
+| PB-029 | M2 | Pet Privacy Settings | DONE | public vs private visibility enforcement, RLS policies |
+| PB-030 | M2 | Pet Public Profile Pages | DONE | Public profile view /animals/[id] with private 403 guard |
+| PB-031 | M2 | Pet Search and Filtering | DONE | Filtering by species and status in /api/v1/animals |
 | PB-032 | M3 | Social Feed | NOT_STARTED | |
 | PB-033 | M3 | Create Photo/Text Posts | NOT_STARTED | |
 | PB-034 | M3 | Comments and Replies | NOT_STARTED | |
