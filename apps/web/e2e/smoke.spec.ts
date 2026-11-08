@@ -22,9 +22,10 @@ test.describe('KINNIPAW Web Smoke & Responsive Suite', () => {
     await expect(page.getByRole('button', { name: /Found Animals/i })).toBeVisible();
   });
 
-  test('rescue coordination page displays emergency hotline 10603', async ({ page }) => {
+  test('rescue coordination page displays verified wildlife hotline', async ({ page }) => {
     await page.goto('/rescue');
-    await expect(page.getByText(/Hotline 10603/i)).toBeVisible();
+    await expect(page.getByText(/01999000095/i)).toBeVisible();
+    await expect(page.getByText(/333-4/i)).toBeVisible();
   });
 
   test('responsive 320px small screen has zero horizontal scroll overflow', async ({ page }) => {

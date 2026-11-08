@@ -26,17 +26,17 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-lg font-bold text-[#245B45] mb-2">2. Compliance with Bangladesh Wildlife Protection Laws</h2>
             <p>
-              Users must strictly comply with the <strong>Bangladesh Wildlife (Preservation and Security) Act, 2012</strong>,
-              the Cruelty to Animals Act, and all relevant legislation. KINNIPAW strictly prohibits:
+              Users must strictly comply with the <strong>Wildlife (Conservation and Security) Act, 2026 (Act No. 86 of 2026)</strong>,
+              the Cruelty to Animals Act, and all applicable animal welfare legislation. KINNIPAW strictly prohibits:
             </p>
             <ul className="list-disc list-inside mt-2 space-y-1 text-[#4B5563]">
               <li>Listing, transferring, selling, or buying protected wild animals, endangered species, or CITES-listed fauna.</li>
               <li>Unauthorized commercial animal trade or unlicensed mass breeding facilities.</li>
-              <li>Content depicting, encouraging, or facilitating animal cruelty, neglect, or dog/cock fighting.</li>
+              <li>Content depicting, encouraging, or facilitating animal cruelty, neglect, or animal fighting.</li>
+              <li>Adoption transfers of uncertain or non-domestic species; all non-domestic fauna remain restricted by default pending statutory review.</li>
             </ul>
             <p className="mt-2 text-xs text-[#991B1B] bg-red-50 p-3 rounded-lg border border-red-200">
-              Any sighting or distress of wild animals must be reported to the Bangladesh Forest Department (Hotline 10603)
-              or authorized wildlife rescue organizations.
+              Any sighting or distress of wild fauna must be reported directly to the Bangladesh Forest Department / Wildlife Crime Control Unit (Hotlines: 01999000095 / 01711159035, National Helpline: 333-4, Source: bforest.gov.bd, verified November 2026). KINNIPAW is an independent platform and does not claim an official partnership with statutory authorities.
             </p>
           </section>
 

@@ -121,7 +121,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         createErrorResponse(
           'FORBIDDEN_SPECIES',
-          'Adoption listing of protected or non-domestic wildlife is prohibited by Bangladesh Wildlife Act 2012',
+          'Adoption listing of protected or non-domestic wildlife is prohibited under the Wildlife (Conservation and Security) Act, 2026 (Act No. 86 of 2026)',
           requestId
         ),
         { status: 403 }

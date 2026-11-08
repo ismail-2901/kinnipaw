@@ -141,7 +141,7 @@ export default async function AdoptionListingDetailPage({ params }: ListingDetai
               </div>
 
               <div className="mt-4 rounded-lg bg-emerald-50 border border-emerald-200 p-4 text-xs text-emerald-800">
-                <strong>Bangladesh Animal Welfare Policy:</strong> KINNIPAW enforces free, lawful adoption and strictly forbids commercial sale, breeding exploitation, or illegal trade of protected fauna under the Bangladesh Wildlife Preservation Act 2012.
+                <strong>Bangladesh Animal Welfare Policy:</strong> KINNIPAW supports free, lawful adoption for domestic companion animals and strictly forbids commercial sale, breeding exploitation, or illegal trade of protected fauna under the Wildlife (Conservation and Security) Act, 2026 (Act No. 86 of 2026).
               </div>
             </div>
           </div>

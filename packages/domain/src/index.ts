@@ -27,8 +27,13 @@ export type ContentReportReason =
 export type ContentReportStatus = 'pending' | 'under_review' | 'resolved' | 'dismissed';
 
 /**
- * Bangladesh Wildlife (Preservation and Security) Act, 2012 Safeguards
- * Prohibits listing, trading, or domestic transfers of protected wildlife species.
+ * Wildlife (Conservation and Security) Act, 2026 (Act No. 86 of 2026) Safeguards
+ * Prohibits listing, trading, breeding, or domestic transfers of protected wildlife species.
+ * In accordance with Act No. 86 of 2026 (in force January 7, 2026), all protected wild fauna
+ * and flora listed in legal schedules are strictly restricted.
+ *
+ * Safe Default: All uncertain or unverified classifications are restricted by default pending
+ * authoritative statutory review.
  */
 export const PROTECTED_WILDLIFE_COMMON_NAMES = [
   'Bengal Tiger',
@@ -58,15 +63,29 @@ export const PERMITTED_DOMESTIC_SPECIES = [
   'Domestic Farm Animal',
 ];
 
+/**
+ * Checks if an animal species is eligible for adoption transfer.
+ * Restricts all wildlife and ensures uncertain classifications remain restricted by default.
+ */
 export function isSpeciesEligibleForAdoption(speciesName: string, isWildlife = false): boolean {
   if (isWildlife) return false;
   const normalized = speciesName.trim().toLowerCase();
+
+  // 1. Prohibit known protected wildlife under Act No. 86 of 2026
   for (const protectedSpecies of PROTECTED_WILDLIFE_COMMON_NAMES) {
     if (normalized.includes(protectedSpecies.toLowerCase())) {
       return false;
     }
   }
-  return true;
+
+  // 2. Safe default whitelist: require match with recognized domestic companion animal
+  // Uncertain or non-domestic species remain restricted pending authoritative verification
+  const isDomestic = PERMITTED_DOMESTIC_SPECIES.some((permitted) => {
+    const base = permitted.toLowerCase().replace('domestic ', '');
+    return normalized.includes(base) || permitted.toLowerCase().includes(normalized);
+  });
+
+  return isDomestic;
 }
 
 /**

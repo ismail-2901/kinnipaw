@@ -104,7 +104,7 @@ This register records all open and resolved architectural, product, governance, 
 **Resolution:** Pending owner product sign-off.  
 **Raised:** 2026-11-08  
 **Blocking:** Seed data for `species` taxonomy table and UI taxonomy selector presets (`PB-017`, `PB-026`).  
-**Notes:** Authoritative project context mandates "Every Animal" inclusivity. However, initial adoption listings must restrict prohibited wildlife and protected species per Bangladesh Wildlife (Conservation and Security) Act 2012. Owner must confirm the exact list of species enabled for MVP adoption (e.g., companion dogs, cats, domestic rabbits, captive birds) vs. species designated as reporting/rescue-only.
+**Notes:** Authoritative project context mandates "Every Animal" inclusivity. However, initial adoption listings must restrict prohibited wildlife and protected species per Bangladesh Wildlife (Conservation and Security) Act, 2026 (Act No. 86 of 2026). Owner must confirm the exact list of species enabled for MVP adoption (e.g., companion dogs, cats, domestic rabbits, captive birds) vs. species designated as reporting/rescue-only. Safe default: all uncertain or non-domestic species remain restricted pending statutory review.
 
 ---
 

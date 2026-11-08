@@ -102,9 +102,9 @@ export default async function AdminDashboardPage() {
           </h2>
           <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-emerald-900 leading-relaxed">
             <div>
-              <h3 className="font-bold text-emerald-950">Wildlife Preservation Act 2012</h3>
+              <h3 className="font-bold text-emerald-950">Wildlife Conservation & Security Act, 2026</h3>
               <p className="mt-1">
-                Zero tolerance for unlawful trade, breeding, or commercial transfer of protected indigenous birds, reptiles, or mammals.
+                Zero tolerance for unlawful trade, breeding, or commercial transfer of protected indigenous birds, reptiles, or mammals under Act No. 86 of 2026.
               </p>
             </div>
             <div>

@@ -36,11 +36,11 @@ ON CONFLICT (role_id, permission_id) DO NOTHING;
 INSERT INTO public.species (id, name, slug, is_domestic, is_active, jurisdiction_notes) VALUES
   ('c0000000-0000-0000-0000-000000000001', 'Dog', 'dog', true, true, 'Domestic dog. Full adoption and care features enabled.'),
   ('c0000000-0000-0000-0000-000000000002', 'Cat', 'cat', true, true, 'Domestic cat. Full adoption and care features enabled.'),
-  ('c0000000-0000-0000-0000-000000000003', 'Bird', 'bird', true, true, 'Domestic/captive birds only. Bangladesh Wildlife Act 2012 applies; native wild species strictly prohibited from trade.'),
+  ('c0000000-0000-0000-0000-000000000003', 'Bird', 'bird', true, true, 'Domestic/captive birds only. Wildlife (Conservation and Security) Act, 2026 (Act No. 86 of 2026) applies; native wild species strictly prohibited from trade and adoption.'),
   ('c0000000-0000-0000-0000-000000000004', 'Rabbit', 'rabbit', true, true, 'Domestic rabbit. Full care and adoption enabled.'),
   ('c0000000-0000-0000-0000-000000000005', 'Small Mammal', 'small-mammal', true, true, 'Hamsters, guinea pigs, etc. Domestic only.'),
   ('c0000000-0000-0000-0000-000000000006', 'Fish', 'fish', true, true, 'Ornamental freshwater/marine fish only.'),
-  ('c0000000-0000-0000-0000-000000000007', 'Reptile', 'reptile', false, true, 'Non-protected domestic reptiles. Wild native reptiles prohibited from commercial listing.')
+  ('c0000000-0000-0000-0000-000000000007', 'Reptile', 'reptile', false, true, 'Wild native reptiles prohibited from listing under Wildlife Act 2026; uncertain classifications restricted.')
 ON CONFLICT (slug) DO NOTHING;
 
 -- 5. SEED COMMON BREEDS

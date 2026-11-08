@@ -102,7 +102,7 @@ All original IDs PB-001 through PB-120 are preserved as stable traceability iden
 | PB-096 | M9 | Native Social Feed | DONE | community post list with author and publication status |
 | PB-097 | M9 | Adoption Workflow | DONE | adoption listings catalog with species and lawful checks |
 | PB-098 | M9 | Lost & Found Workflow | DONE | lost/found dual toggle, coarse area badges, and sighting view |
-| PB-099 | M9 | Rescue Workflow | DONE | emergency banner, wildlife hotline 10603, and urgency triage |
+| PB-099 | M9 | Rescue Workflow | DONE | emergency banner, verified wildlife contacts, and urgency triage |
 | PB-100 | M9 | Native Messaging | DONE | conversation list and direct messaging interface |
 | PB-101 | M9 | Push Notifications | DONE | device token registration with platform upsert and unregister |
 | PB-102 | M9 | Deep Linking | DONE | kinnipaw:// custom scheme and nested stack routing |
@@ -118,7 +118,7 @@ All original IDs PB-001 through PB-120 are preserved as stable traceability iden
 | PB-112 | M10 | Cross-device Responsive Testing | DONE | 320px viewport test verifying zero horizontal overflow |
 | PB-113 | M10 | Image Optimization | DONE | AVIF/WebP image formats & server-side EXIF stripping |
 | PB-114 | M10 | Performance Audit | DONE | Turbopack compilation & bundle optimization across 45 routes |
-| PB-115 | M10 | Privacy Policy and Terms | DONE | /privacy and /terms compliant with Bangladesh Wildlife Act 2012 |
+| PB-115 | M10 | Privacy Policy and Terms | DONE | /privacy and /terms compliant with Wildlife Act 2026 (Act 86 of 2026) |
 | PB-116 | M10 | Account Deletion Workflow | DONE | /api/v1/auth/delete-account with audit logging & token deactivation |
 | PB-117 | M10 | UGC Moderation Readiness | DONE | moderation review queue, audit logs, and escalation procedures |
 | PB-118 | M10 | Backup and Recovery Testing | DONE | BACKUP_RECOVERY.md recovery targets & quarterly drill runbook |

@@ -227,7 +227,7 @@ Milestones are strictly sequential. A later milestone must never begin while the
 - KINNIPAW is an all-animal platform ("One Platform. Every Animal. One Connected Ecosystem").
 - Never assume dogs and cats only. Architecture, taxonomy, care records, and lost/found must support all companion, domestic, and rescued animals (e.g. cats, dogs, birds, rabbits, small mammals, domestic farm animals).
 - Strict species and jurisdiction safety controls:
-  - Comply with Bangladesh Wildlife (Preservation and Security) Act, 2012 and relevant animal-welfare legislation.
+  - Comply with the Wildlife (Conservation and Security) Act, 2026 (Act No. 86 of 2026) and relevant animal-welfare legislation. All uncertain legal classifications remain restricted pending authoritative statutory review.
   - Prohibit listings, trade, breeding, or adoption transfers of protected native wildlife, endangered species, or CITES-restricted animals.
   - Rescue coordination for injured or distressed wildlife must route to authorized forestry/wildlife rescue authorities or accredited rescue organizations.
   - Adoption and transfer modules must enforce species-specific eligibility and prevent unlawful animal commerce.

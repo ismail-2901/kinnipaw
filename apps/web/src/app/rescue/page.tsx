@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
+import { OFFICIAL_WILDLIFE_EMERGENCY_CONFIG } from '@kinnipaw/config';
 
 interface RescuePageProps {
   searchParams: Promise<{ status?: string; urgency?: string }>;
@@ -80,10 +81,14 @@ export default async function RescueCoordinationPage({ searchParams }: RescuePag
       </div>
 
       {/* Wildlife Notice */}
-      <div className="bg-emerald-950 text-emerald-100 px-6 py-3 border-y border-emerald-900 text-xs">
-        <div className="mx-auto max-w-6xl flex items-center justify-between">
+      <div className="bg-emerald-950 text-emerald-100 px-6 py-4 border-y border-emerald-900 text-xs">
+        <div className="mx-auto max-w-6xl flex flex-col md:flex-row md:items-center justify-between gap-2">
           <span>
-            🌿 <strong>Wildlife Rescue Protocol:</strong> Injured wild animals (e.g., primates, raptors, native reptiles) must be routed to the Bangladesh Forest Department / Wildlife Crime Control Unit.
+            🌿 <strong>Wildlife Rescue Protocol:</strong> Under the Wildlife (Conservation and Security) Act, 2026 (Act No. 86 of 2026), wild or endangered fauna must be reported directly to the {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.authority} / {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.department}.
+            Hotlines: <strong>{OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.hotlines[0]}</strong> / <strong>{OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.hotlines[1]}</strong> | Helpline: <strong>{OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.nationalHelpline}</strong>
+          </span>
+          <span className="text-emerald-400 text-[11px] whitespace-nowrap">
+            Source: {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.sourceUrl} (Verified {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.lastVerifiedDate}) • Independent community directory
           </span>
         </div>
       </div>

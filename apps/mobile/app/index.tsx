@@ -54,7 +54,7 @@ export default function HomeScreen() {
     <ScrollView style={styles.container}>
       <View style={styles.hero}>
         <View style={styles.badge}>
-          <Text style={styles.badgeText}>Bangladesh-First Animal Ecosystem</Text>
+          <Text style={styles.badgeText}>Animal Welfare & Care Ecosystem • Bangladesh</Text>
         </View>
         <Text style={styles.title}>KINNIPAW</Text>
         <Text style={styles.tagline}>One Platform. Every Animal. One Connected Ecosystem.</Text>

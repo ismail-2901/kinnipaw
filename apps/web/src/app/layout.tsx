@@ -4,7 +4,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'KINNIPAW — One Platform. Every Animal. One Connected Ecosystem.',
   description:
-    'Bangladesh-first animal community, responsible care, adoption, lost-and-found, and rescue coordination ecosystem.',
+    'Dedicated animal community, responsible care, adoption, lost-and-found, and rescue coordination ecosystem focused on Bangladesh.',
 };
 
 export default function RootLayout({

@@ -5,7 +5,7 @@ export default function HomePage() {
     <main className="flex min-h-screen flex-col items-center justify-center p-8 text-center">
       <div className="max-w-2xl space-y-6">
         <div className="inline-block rounded-full bg-[#E0EDE6] px-4 py-1.5 text-sm font-medium text-[#245B45]">
-          Bangladesh-First Animal Ecosystem
+          Animal Welfare &amp; Community Ecosystem • Bangladesh
         </div>
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl text-[#245B45]">
           KINNIPAW

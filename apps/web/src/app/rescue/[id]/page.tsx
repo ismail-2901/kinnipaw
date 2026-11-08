@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
+import { OFFICIAL_WILDLIFE_EMERGENCY_CONFIG } from '@kinnipaw/config';
 
 interface RescueCaseDetailPageProps {
   params: Promise<{ id: string }>;
@@ -82,7 +83,7 @@ export default async function RescueCaseDetailPage({ params }: RescueCaseDetailP
 
               {rescueCase.is_wildlife && (
                 <div className="mt-4 rounded-xl border border-emerald-300 bg-emerald-50 p-4 text-xs text-emerald-900 leading-relaxed">
-                  🌿 <strong>Protected Wildlife Alert:</strong> This animal belongs to protected native wildlife. Coordination must involve authorized forestry/wildlife rescue authorities in compliance with the Bangladesh Wildlife Preservation Act 2012.
+                  🌿 <strong>Protected Wildlife Alert:</strong> This animal belongs to protected native wildlife. In compliance with the Wildlife (Conservation and Security) Act, 2026 (Act No. 86 of 2026), rescue coordination must involve authorized statutory authorities: {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.authority} (Hotlines: {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.hotlines[0]} / {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.hotlines[1]}, Helpline: {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.nationalHelpline}). Source: {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.sourceUrl} (Verified {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.lastVerifiedDate}).
                 </div>
               )}
 

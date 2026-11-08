@@ -9,6 +9,7 @@ import {
   ScrollView,
 } from 'react-native';
 import { supabase } from '../../../lib/supabase';
+import { OFFICIAL_WILDLIFE_EMERGENCY_CONFIG } from '@kinnipaw/config';
 
 interface RescueCaseItem {
   id: string;
@@ -77,10 +78,13 @@ export default function MobileRescueScreen() {
     <View style={styles.container}>
       {/* Emergency Hotline Alert Banner */}
       <View style={styles.emergencyBanner} accessibilityRole="alert">
-        <Text style={styles.bannerTitle}>🚨 Wildlife & Animal Emergency</Text>
+        <Text style={styles.bannerTitle}>🚨 Wildlife Incident Protocol ({OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.authority})</Text>
         <Text style={styles.bannerText}>
-          For wild or endangered animals, please notify Bangladesh Forest Department immediately:
-          Hotline 10603.
+          Under the Wildlife (Conservation and Security) Act, 2026, distressed wild fauna must be reported directly to statutory authorities.
+          WCCU Hotlines: {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.hotlines[0]} / {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.hotlines[1]} | Helpline: {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.nationalHelpline}
+        </Text>
+        <Text style={styles.bannerMeta}>
+          Source: {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.sourceUrl} • Verified: {OFFICIAL_WILDLIFE_EMERGENCY_CONFIG.lastVerifiedDate} (Independent community reference; no official partnership claimed)
         </Text>
       </View>
 
@@ -188,6 +192,12 @@ const styles = StyleSheet.create({
     color: '#7F1D1D',
     fontSize: 12,
     lineHeight: 18,
+  },
+  bannerMeta: {
+    color: '#991B1B',
+    fontSize: 10,
+    marginTop: 4,
+    fontStyle: 'italic',
   },
   filterContainer: {
     paddingVertical: 10,

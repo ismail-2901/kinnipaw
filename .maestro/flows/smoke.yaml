@@ -20,8 +20,8 @@ appId: com.kinnipaw.app
 
 # Navigate to Rescue
 - tapOn: "Rescue"
-- assertVisible: "Wildlife & Animal Emergency"
-- assertVisible: "Hotline 10603"
+- assertVisible: "Wildlife Incident Protocol"
+- assertVisible: "01999000095"
 
 # Navigate to Providers
 - tapOn: "Providers"
