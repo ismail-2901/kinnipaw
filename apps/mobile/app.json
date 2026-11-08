@@ -13,14 +13,23 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.kinnipaw.app"
+      "bundleIdentifier": "com.kinnipaw.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "KINNIPAW uses your camera to photograph animals for identification, lost & found sighting reports, and care records.",
+        "NSPhotoLibraryUsageDescription": "KINNIPAW accesses your photo library to allow you to upload animal photos with automatic EXIF metadata stripping for privacy."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#245B45"
       },
-      "package": "com.kinnipaw.app"
+      "package": "com.kinnipaw.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png",

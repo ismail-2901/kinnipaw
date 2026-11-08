@@ -79,11 +79,11 @@ This table maps each requirement work package from the HTML Foundation roadmap (
 | POS-055 | AI lost/found visual similarity ranking | PB-088 | DONE |
 | POS-056 | AI content moderation risk scoring & triage | PB-090 | DONE |
 | POS-057 | AI cost controls, token limits & fallbacks | PB-091, PB-092, PB-093 | DONE |
-| POS-058 | Native mobile feature parity (profiles, feed, adoption, rescue) | PB-095, PB-096, PB-097, PB-098, PB-099, PB-100 | NOT_STARTED |
-| POS-059 | Mobile universal & deep linking integration | PB-102 | NOT_STARTED |
-| POS-060 | Native mobile push notifications (APNs / FCM) | PB-101 | NOT_STARTED |
-| POS-061 | Native device permissions (camera, photos, location) | PB-103 | NOT_STARTED |
-| POS-062 | Store assets, bundle config & app metadata | PB-104, PB-105, PB-106 | NOT_STARTED |
+| POS-058 | Native mobile feature parity (profiles, feed, adoption, rescue) | PB-095, PB-096, PB-097, PB-098, PB-099, PB-100 | DONE |
+| POS-059 | Mobile universal & deep linking integration | PB-102 | DONE |
+| POS-060 | Native mobile push notifications (APNs / FCM) | PB-101 | DONE |
+| POS-061 | Native device permissions (camera, photos, location) | PB-103 | DONE |
+| POS-062 | Store assets, bundle config & app metadata | PB-104, PB-105, PB-106 | DONE |
 | POS-063 | Comprehensive security audit (RLS, API, headers) | PB-110, PB-111 | NOT_STARTED |
 | POS-064 | Performance audit, CDN & image optimization | PB-113, PB-114 | NOT_STARTED |
 | POS-065 | Accessibility audit (WCAG AA) & responsive checks | PB-106, PB-112 | NOT_STARTED |

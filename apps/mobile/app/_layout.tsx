@@ -23,6 +23,36 @@ export default function RootLayout() {
             title: 'KINNIPAW',
           }}
         />
+        <Stack.Screen
+          name="(tabs)"
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="(auth)/login"
+          options={{
+            title: 'Sign In',
+          }}
+        />
+        <Stack.Screen
+          name="care-assistant"
+          options={{
+            title: 'AI Care Companion',
+          }}
+        />
+        <Stack.Screen
+          name="profile/index"
+          options={{
+            title: 'My Profile & Animals',
+          }}
+        />
+        <Stack.Screen
+          name="animal/[id]"
+          options={{
+            title: 'Animal Profile',
+          }}
+        />
       </Stack>
     </>
   );

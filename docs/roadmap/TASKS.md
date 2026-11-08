@@ -97,19 +97,19 @@ All original IDs PB-001 through PB-120 are preserved as stable traceability iden
 | PB-091 | M8 | AI Request Limits | DONE | token tracking and request budget capping |
 | PB-092 | M8 | AI Fallback and Error Handling | DONE | safe heuristic fallbacks ensuring 100% platform uptime |
 | PB-093 | M8 | AI Privacy Controls | DONE | zero PII input summaries & EXIF stripping |
-| PB-094 | M9 | Mobile Authentication | NOT_STARTED | |
-| PB-095 | M9 | Native Pet Profile | NOT_STARTED | |
-| PB-096 | M9 | Native Social Feed | NOT_STARTED | |
-| PB-097 | M9 | Adoption Workflow | NOT_STARTED | |
-| PB-098 | M9 | Lost & Found Workflow | NOT_STARTED | |
-| PB-099 | M9 | Rescue Workflow | NOT_STARTED | |
-| PB-100 | M9 | Native Messaging | NOT_STARTED | |
-| PB-101 | M9 | Push Notifications | NOT_STARTED | |
-| PB-102 | M9 | Deep Linking | NOT_STARTED | |
-| PB-103 | M9 | Camera and Photo Picker | NOT_STARTED | |
-| PB-104 | M9 | Android Build | NOT_STARTED | |
-| PB-105 | M9 | iOS Build | NOT_STARTED | |
-| PB-106 | M9 | Mobile Navigation and Accessibility | NOT_STARTED | |
+| PB-094 | M9 | Mobile Authentication | DONE | email/password login screen & Supabase session persistence |
+| PB-095 | M9 | Native Pet Profile | DONE | profile & pet overview screen with animal detail navigation |
+| PB-096 | M9 | Native Social Feed | DONE | community post list with author and publication status |
+| PB-097 | M9 | Adoption Workflow | DONE | adoption listings catalog with species and lawful checks |
+| PB-098 | M9 | Lost & Found Workflow | DONE | lost/found dual toggle, coarse area badges, and sighting view |
+| PB-099 | M9 | Rescue Workflow | DONE | emergency banner, wildlife hotline 10603, and urgency triage |
+| PB-100 | M9 | Native Messaging | DONE | conversation list and direct messaging interface |
+| PB-101 | M9 | Push Notifications | DONE | device token registration with platform upsert and unregister |
+| PB-102 | M9 | Deep Linking | DONE | kinnipaw:// custom scheme and nested stack routing |
+| PB-103 | M9 | Camera and Photo Picker | DONE | media upload helper with EXIF strip compliance and 10MB limit |
+| PB-104 | M9 | Android Build | DONE | package config, permissions, adaptive icon & splash |
+| PB-105 | M9 | iOS Build | DONE | bundle id, privacy permission strings, tablet support |
+| PB-106 | M9 | Mobile Navigation and Accessibility | DONE | bottom tab bar, high-contrast badges, and accessibility labels |
 | PB-107 | M10 | Full Unit Testing | NOT_STARTED | |
 | PB-108 | M10 | Web E2E Testing | NOT_STARTED | |
 | PB-109 | M10 | Mobile E2E Testing | NOT_STARTED | |
