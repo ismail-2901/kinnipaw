@@ -1083,6 +1083,404 @@ export interface Database {
           changed_at?: string;
         };
       };
+      organizations: {
+        Row: {
+          id: string;
+          name: string;
+          slug: string;
+          organization_type: 'rescue' | 'clinic' | 'community' | 'adoption_centre' | 'other';
+          description: string | null;
+          verification_status: 'unverified' | 'pending' | 'verified' | 'suspended';
+          public_email: string | null;
+          public_phone: string | null;
+          city: string | null;
+          area_label: string | null;
+          service_area: unknown | null;
+          created_by: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          name: string;
+          slug: string;
+          organization_type?: 'rescue' | 'clinic' | 'community' | 'adoption_centre' | 'other';
+          description?: string | null;
+          verification_status?: 'unverified' | 'pending' | 'verified' | 'suspended';
+          public_email?: string | null;
+          public_phone?: string | null;
+          city?: string | null;
+          area_label?: string | null;
+          service_area?: unknown | null;
+          created_by?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          name?: string;
+          slug?: string;
+          organization_type?: 'rescue' | 'clinic' | 'community' | 'adoption_centre' | 'other';
+          description?: string | null;
+          verification_status?: 'unverified' | 'pending' | 'verified' | 'suspended';
+          public_email?: string | null;
+          public_phone?: string | null;
+          city?: string | null;
+          area_label?: string | null;
+          service_area?: unknown | null;
+          created_by?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      organization_members: {
+        Row: {
+          id: string;
+          organization_id: string;
+          user_id: string;
+          org_role: 'owner' | 'admin' | 'member' | 'vet';
+          joined_at: string;
+        };
+        Insert: {
+          id?: string;
+          organization_id: string;
+          user_id: string;
+          org_role?: 'owner' | 'admin' | 'member' | 'vet';
+          joined_at?: string;
+        };
+        Update: {
+          id?: string;
+          organization_id?: string;
+          user_id?: string;
+          org_role?: 'owner' | 'admin' | 'member' | 'vet';
+          joined_at?: string;
+        };
+      };
+      provider_profiles: {
+        Row: {
+          id: string;
+          user_id: string | null;
+          organization_id: string | null;
+          provider_type: 'veterinarian' | 'groomer' | 'trainer' | 'boarding' | 'clinic' | 'other';
+          public_name: string;
+          vet_credentials: Json | null;
+          verification_status: 'unverified' | 'pending' | 'verified' | 'suspended';
+          public_address: string | null;
+          service_area: unknown | null;
+          description: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          user_id?: string | null;
+          organization_id?: string | null;
+          provider_type: 'veterinarian' | 'groomer' | 'trainer' | 'boarding' | 'clinic' | 'other';
+          public_name: string;
+          vet_credentials?: Json | null;
+          verification_status?: 'unverified' | 'pending' | 'verified' | 'suspended';
+          public_address?: string | null;
+          service_area?: unknown | null;
+          description?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          user_id?: string | null;
+          organization_id?: string | null;
+          provider_type?: 'veterinarian' | 'groomer' | 'trainer' | 'boarding' | 'clinic' | 'other';
+          public_name?: string;
+          vet_credentials?: Json | null;
+          verification_status?: 'unverified' | 'pending' | 'verified' | 'suspended';
+          public_address?: string | null;
+          service_area?: unknown | null;
+          description?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      provider_services: {
+        Row: {
+          id: string;
+          provider_profile_id: string;
+          service_name: string;
+          description: string | null;
+          price_range_description: string | null;
+          is_active: boolean;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          provider_profile_id: string;
+          service_name: string;
+          description?: string | null;
+          price_range_description?: string | null;
+          is_active?: boolean;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          provider_profile_id?: string;
+          service_name?: string;
+          description?: string | null;
+          price_range_description?: string | null;
+          is_active?: boolean;
+          created_at?: string;
+        };
+      };
+      provider_reviews: {
+        Row: {
+          id: string;
+          provider_profile_id: string;
+          reviewer_id: string;
+          rating: number;
+          body: string | null;
+          is_visible: boolean;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          provider_profile_id: string;
+          reviewer_id: string;
+          rating: number;
+          body?: string | null;
+          is_visible?: boolean;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          provider_profile_id?: string;
+          reviewer_id?: string;
+          rating?: number;
+          body?: string | null;
+          is_visible?: boolean;
+          created_at?: string;
+        };
+      };
+      appointments: {
+        Row: {
+          id: string;
+          provider_profile_id: string;
+          animal_id: string;
+          requested_by: string;
+          appointment_status: 'pending' | 'confirmed' | 'cancelled' | 'completed';
+          requested_at: string;
+          notes: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          provider_profile_id: string;
+          animal_id: string;
+          requested_by: string;
+          appointment_status?: 'pending' | 'confirmed' | 'cancelled' | 'completed';
+          requested_at: string;
+          notes?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          provider_profile_id?: string;
+          animal_id?: string;
+          requested_by?: string;
+          appointment_status?: 'pending' | 'confirmed' | 'cancelled' | 'completed';
+          requested_at?: string;
+          notes?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      conversations: {
+        Row: {
+          id: string;
+          conversation_type: 'direct' | 'group';
+          created_by: string;
+          title: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          conversation_type?: 'direct' | 'group';
+          created_by: string;
+          title?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          conversation_type?: 'direct' | 'group';
+          created_by?: string;
+          title?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      conversation_members: {
+        Row: {
+          id: string;
+          conversation_id: string;
+          user_id: string;
+          last_read_at: string | null;
+          joined_at: string;
+        };
+        Insert: {
+          id?: string;
+          conversation_id: string;
+          user_id: string;
+          last_read_at?: string | null;
+          joined_at?: string;
+        };
+        Update: {
+          id?: string;
+          conversation_id?: string;
+          user_id?: string;
+          last_read_at?: string | null;
+          joined_at?: string;
+        };
+      };
+      messages: {
+        Row: {
+          id: string;
+          conversation_id: string;
+          sender_id: string;
+          body: string | null;
+          sent_at: string;
+          is_deleted: boolean;
+        };
+        Insert: {
+          id?: string;
+          conversation_id: string;
+          sender_id: string;
+          body?: string | null;
+          sent_at?: string;
+          is_deleted?: boolean;
+        };
+        Update: {
+          id?: string;
+          conversation_id?: string;
+          sender_id?: string;
+          body?: string | null;
+          sent_at?: string;
+          is_deleted?: boolean;
+        };
+      };
+      message_attachments: {
+        Row: {
+          id: string;
+          message_id: string;
+          storage_path: string;
+          media_type: 'image' | 'document';
+          file_size_bytes: number | null;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          message_id: string;
+          storage_path: string;
+          media_type: 'image' | 'document';
+          file_size_bytes?: number | null;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          message_id?: string;
+          storage_path?: string;
+          media_type?: 'image' | 'document';
+          file_size_bytes?: number | null;
+          created_at?: string;
+        };
+      };
+      notifications: {
+        Row: {
+          id: string;
+          recipient_id: string;
+          notification_type: string;
+          payload: Json | null;
+          is_read: boolean;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          recipient_id: string;
+          notification_type: string;
+          payload?: Json | null;
+          is_read?: boolean;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          recipient_id?: string;
+          notification_type?: string;
+          payload?: Json | null;
+          is_read?: boolean;
+          created_at?: string;
+        };
+      };
+      device_tokens: {
+        Row: {
+          id: string;
+          user_id: string;
+          token: string;
+          platform: 'ios' | 'android' | 'web';
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          user_id: string;
+          token: string;
+          platform: 'ios' | 'android' | 'web';
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          user_id?: string;
+          token?: string;
+          platform?: 'ios' | 'android' | 'web';
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      notification_preferences: {
+        Row: {
+          id: string;
+          user_id: string;
+          email_notifications: boolean;
+          push_notifications: boolean;
+          adoption_alerts: boolean;
+          rescue_alerts: boolean;
+          care_reminders: boolean;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          user_id: string;
+          email_notifications?: boolean;
+          push_notifications?: boolean;
+          adoption_alerts?: boolean;
+          rescue_alerts?: boolean;
+          care_reminders?: boolean;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          user_id?: string;
+          email_notifications?: boolean;
+          push_notifications?: boolean;
+          adoption_alerts?: boolean;
+          rescue_alerts?: boolean;
+          care_reminders?: boolean;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
     };
     Views: Record<string, never>;
     Functions: Record<string, never>;

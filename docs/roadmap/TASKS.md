@@ -65,19 +65,19 @@ All original IDs PB-001 through PB-120 are preserved as stable traceability iden
 | PB-059 | M5 | Rescue Status Workflow | DONE | open/assigned/in_progress/resolved status transitions |
 | PB-060 | M5 | Rescue History | DONE | rescue_status_events audit trail trigger |
 | PB-061 | M5 | Reunion Confirmation | DONE | lost_found_matches table & human confirmation flow |
-| PB-062 | M6 | Conversation Management | NOT_STARTED | |
-| PB-063 | M6 | Private Realtime Messaging | NOT_STARTED | |
-| PB-064 | M6 | Message Read State | NOT_STARTED | |
-| PB-065 | M6 | Notification Center | NOT_STARTED | |
-| PB-066 | M6 | Device Registration | NOT_STARTED | |
-| PB-067 | M6 | Push Notification Integration | NOT_STARTED | |
-| PB-068 | M6 | Pet Health Timeline | NOT_STARTED | |
-| PB-069 | M6 | Care Reminders | NOT_STARTED | |
-| PB-070 | M6 | Provider Directory | NOT_STARTED | |
-| PB-071 | M6 | Provider Registration | NOT_STARTED | |
-| PB-072 | M6 | Provider Verification | NOT_STARTED | |
-| PB-073 | M6 | Provider Reviews | NOT_STARTED | |
-| PB-074 | M6 | Events and RSVP | NOT_STARTED | |
+| PB-062 | M6 | Conversation Management | DONE | conversations & members tables, RLS, /api/v1/conversations |
+| PB-063 | M6 | Private Realtime Messaging | DONE | messages table, attachments, /api/v1/conversations/[id]/messages |
+| PB-064 | M6 | Message Read State | DONE | conversation_members.last_read_at tracking |
+| PB-065 | M6 | Notification Center | DONE | notifications table, /api/v1/notifications, and web /notifications |
+| PB-066 | M6 | Device Registration | DONE | device_tokens table & /api/v1/notifications/device-tokens |
+| PB-067 | M6 | Push Notification Integration | DONE | notification_preferences table & /api/v1/notifications/preferences |
+| PB-068 | M6 | Pet Health Timeline | DONE | animal_health_records & /api/v1/animals/[id]/health |
+| PB-069 | M6 | Care Reminders | DONE | care_reminders & /api/v1/animals/[id]/reminders |
+| PB-070 | M6 | Provider Directory | DONE | provider_profiles table & /providers directory page |
+| PB-071 | M6 | Provider Registration | DONE | /api/v1/providers POST registration |
+| PB-072 | M6 | Provider Verification | DONE | verification_status & credential schema validation |
+| PB-073 | M6 | Provider Reviews | DONE | provider_reviews table & /api/v1/providers/[id]/reviews |
+| PB-074 | M6 | Events and RSVP | DONE | appointments scheduling & /api/v1/appointments |
 | PB-075 | M7 | Admin Dashboard | NOT_STARTED | |
 | PB-076 | M7 | User Management | NOT_STARTED | |
 | PB-077 | M7 | Content Moderation | NOT_STARTED | |

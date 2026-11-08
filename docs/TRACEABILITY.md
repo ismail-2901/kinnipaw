@@ -41,8 +41,8 @@ This table maps each requirement work package from the HTML Foundation roadmap (
 | POS-017 | User onboarding flow & initial setup | PB-024 | DONE |
 | POS-018 | Animal profile CRUD, search & filtering | PB-026, PB-027, PB-030, PB-031 | DONE |
 | POS-019 | Animal photos & sanitized media gallery | PB-028 | DONE |
-| POS-020 | Care timeline & health record history | PB-068 | NOT_STARTED |
-| POS-021 | Care reminders (vaccinations, grooming) | PB-069 | NOT_STARTED |
+| POS-020 | Care timeline & health record history | PB-068 | DONE |
+| POS-021 | Care reminders (vaccinations, grooming) | PB-069 | DONE |
 | POS-022 | Social community feed & infinite scroll | PB-032, PB-038, PB-039, PB-041 | DONE |
 | POS-023 | Post creation with media & sanitization | PB-033 | DONE |
 | POS-024 | Comments & threaded replies | PB-034 | DONE |
@@ -61,12 +61,12 @@ This table maps each requirement work package from the HTML Foundation roadmap (
 | POS-037 | Human match review & candidate dismissal | PB-056, PB-061 | DONE |
 | POS-038 | Rescue request creation & urgency triage | PB-057, PB-059 | DONE |
 | POS-039 | Volunteer rescue assignment, history & closure | PB-058, PB-060 | DONE |
-| POS-040 | Conversation management & authorization | PB-062 | NOT_STARTED |
-| POS-041 | Realtime messaging & delivery/read states | PB-063, PB-064 | NOT_STARTED |
-| POS-042 | In-app notification center & preferences | PB-065 | NOT_STARTED |
-| POS-043 | Push foundations & device registration | PB-066, PB-067 | NOT_STARTED |
-| POS-044 | Professional directory, services & reviews | PB-070, PB-071, PB-072, PB-073 | NOT_STARTED |
-| POS-045 | Search alerts & geographic radius discovery | PB-053, PB-054, PB-065 | NOT_STARTED |
+| POS-040 | Conversation management & authorization | PB-062 | DONE |
+| POS-041 | Realtime messaging & delivery/read states | PB-063, PB-064 | DONE |
+| POS-042 | In-app notification center & preferences | PB-065 | DONE |
+| POS-043 | Push foundations & device registration | PB-066, PB-067 | DONE |
+| POS-044 | Professional directory, services & reviews | PB-070, PB-071, PB-072, PB-073 | DONE |
+| POS-045 | Search alerts & geographic radius discovery | PB-053, PB-054, PB-065 | DONE |
 | POS-046 | Protected admin shell & metrics overview | PB-075 | NOT_STARTED |
 | POS-047 | RBAC administration, user roles & MFA | PB-076, PB-083, PB-084 | NOT_STARTED |
 | POS-048 | Content report review queue & triage | PB-077, PB-078 | NOT_STARTED |
