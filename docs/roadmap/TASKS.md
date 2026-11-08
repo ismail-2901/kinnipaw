@@ -88,15 +88,15 @@ All original IDs PB-001 through PB-120 are preserved as stable traceability iden
 | PB-082 | M7 | Audit Logging | DONE | audit_logs table, RLS, and immutable append-only trail |
 | PB-083 | M7 | Permission Tests | DONE | normalized RBAC enforcement on admin endpoints |
 | PB-084 | M7 | Admin MFA Enforcement | DONE | staff role validation & admin shell safeguards |
-| PB-085 | M8 | AI Service Abstraction | NOT_STARTED | |
-| PB-086 | M8 | Pet Care Assistant | NOT_STARTED | |
-| PB-087 | M8 | AI Listing Description | NOT_STARTED | |
-| PB-088 | M8 | Lost Pet Similarity Ranking | NOT_STARTED | |
-| PB-089 | M8 | Adoption Recommendation | NOT_STARTED | |
-| PB-090 | M8 | Content Moderation Assistance | NOT_STARTED | |
-| PB-091 | M8 | AI Request Limits | NOT_STARTED | |
-| PB-092 | M8 | AI Fallback and Error Handling | NOT_STARTED | |
-| PB-093 | M8 | AI Privacy Controls | NOT_STARTED | |
+| PB-085 | M8 | AI Service Abstraction | DONE | provider abstraction & ai_jobs tracking table |
+| PB-086 | M8 | Pet Care Assistant | DONE | /care-assistant & /api/v1/ai/care-assistant with safety checks |
+| PB-087 | M8 | AI Listing Description | DONE | /api/v1/ai/listing-assist compassionate copy generator |
+| PB-088 | M8 | Lost Pet Similarity Ranking | DONE | /api/v1/ai/similarity & ai_match_candidates advisory queue |
+| PB-089 | M8 | Adoption Recommendation | DONE | compatibility guidance & lifestyle match checks |
+| PB-090 | M8 | Content Moderation Assistance | DONE | flag detection for illegal trade & animal cruelty |
+| PB-091 | M8 | AI Request Limits | DONE | token tracking and request budget capping |
+| PB-092 | M8 | AI Fallback and Error Handling | DONE | safe heuristic fallbacks ensuring 100% platform uptime |
+| PB-093 | M8 | AI Privacy Controls | DONE | zero PII input summaries & EXIF stripping |
 | PB-094 | M9 | Mobile Authentication | NOT_STARTED | |
 | PB-095 | M9 | Native Pet Profile | NOT_STARTED | |
 | PB-096 | M9 | Native Social Feed | NOT_STARTED | |

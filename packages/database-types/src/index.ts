@@ -1510,6 +1510,82 @@ export interface Database {
           created_at?: string;
         };
       };
+      ai_jobs: {
+        Row: {
+          id: string;
+          requested_by: string;
+          job_type: 'lost_found_match' | 'care_tip' | 'behavior_analysis' | 'listing_assist' | 'moderation_assist';
+          provider: string;
+          model: string | null;
+          status: 'pending' | 'running' | 'completed' | 'failed';
+          input_summary: string | null;
+          tokens_used: number | null;
+          error_message: string | null;
+          created_at: string;
+          completed_at: string | null;
+        };
+        Insert: {
+          id?: string;
+          requested_by: string;
+          job_type: 'lost_found_match' | 'care_tip' | 'behavior_analysis' | 'listing_assist' | 'moderation_assist';
+          provider: string;
+          model?: string | null;
+          status?: 'pending' | 'running' | 'completed' | 'failed';
+          input_summary?: string | null;
+          tokens_used?: number | null;
+          error_message?: string | null;
+          created_at?: string;
+          completed_at?: string | null;
+        };
+        Update: {
+          id?: string;
+          requested_by?: string;
+          job_type?: 'lost_found_match' | 'care_tip' | 'behavior_analysis' | 'listing_assist' | 'moderation_assist';
+          provider?: string;
+          model?: string | null;
+          status?: 'pending' | 'running' | 'completed' | 'failed';
+          input_summary?: string | null;
+          tokens_used?: number | null;
+          error_message?: string | null;
+          created_at?: string;
+          completed_at?: string | null;
+        };
+      };
+      ai_match_candidates: {
+        Row: {
+          id: string;
+          ai_job_id: string;
+          lost_post_id: string;
+          candidate_post_id: string;
+          confidence_score: number | null;
+          reasoning_summary: string | null;
+          candidate_status: 'pending_review' | 'accepted' | 'rejected';
+          reviewed_by: string | null;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          ai_job_id: string;
+          lost_post_id: string;
+          candidate_post_id: string;
+          confidence_score?: number | null;
+          reasoning_summary?: string | null;
+          candidate_status?: 'pending_review' | 'accepted' | 'rejected';
+          reviewed_by?: string | null;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          ai_job_id?: string;
+          lost_post_id?: string;
+          candidate_post_id?: string;
+          confidence_score?: number | null;
+          reasoning_summary?: string | null;
+          candidate_status?: 'pending_review' | 'accepted' | 'rejected';
+          reviewed_by?: string | null;
+          created_at?: string;
+        };
+      };
     };
     Views: Record<string, never>;
     Functions: Record<string, never>;

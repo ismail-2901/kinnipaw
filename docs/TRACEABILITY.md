@@ -73,12 +73,12 @@ This table maps each requirement work package from the HTML Foundation roadmap (
 | POS-049 | Moderation actions, account restrictions & bans | PB-077, PB-081, PB-082 | DONE |
 | POS-050 | Professional & rescue org verification review | PB-079, PB-080 | DONE |
 | POS-051 | Audit log viewer & security event history | PB-082 | DONE |
-| POS-052 | AI provider abstraction & failover layer | PB-085 | NOT_STARTED |
-| POS-053 | Educational pet care companion (non-diagnostic) | PB-086 | NOT_STARTED |
-| POS-054 | AI adoption compatibility suggestions & copy | PB-087, PB-089 | NOT_STARTED |
-| POS-055 | AI lost/found visual similarity ranking | PB-088 | NOT_STARTED |
-| POS-056 | AI content moderation risk scoring & triage | PB-090 | NOT_STARTED |
-| POS-057 | AI cost controls, token limits & fallbacks | PB-091, PB-092, PB-093 | NOT_STARTED |
+| POS-052 | AI provider abstraction & failover layer | PB-085 | DONE |
+| POS-053 | Educational pet care companion (non-diagnostic) | PB-086 | DONE |
+| POS-054 | AI adoption compatibility suggestions & copy | PB-087, PB-089 | DONE |
+| POS-055 | AI lost/found visual similarity ranking | PB-088 | DONE |
+| POS-056 | AI content moderation risk scoring & triage | PB-090 | DONE |
+| POS-057 | AI cost controls, token limits & fallbacks | PB-091, PB-092, PB-093 | DONE |
 | POS-058 | Native mobile feature parity (profiles, feed, adoption, rescue) | PB-095, PB-096, PB-097, PB-098, PB-099, PB-100 | NOT_STARTED |
 | POS-059 | Mobile universal & deep linking integration | PB-102 | NOT_STARTED |
 | POS-060 | Native mobile push notifications (APNs / FCM) | PB-101 | NOT_STARTED |
